@@ -61,3 +61,13 @@ footer {
   padding:150px 50px 100px 50px;
 
 }
+input[type=text], input[type=password]{
+	border:none;
+	border-bottom: solid 2px black;
+	padding:2px;
+}
+input[type=image]{
+	height:10px;
+	width:10px;
+	padding:8px;
+}

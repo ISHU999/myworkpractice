@@ -1,0 +1,14 @@
+{
+    "supervisor": [
+
+        {
+            "empid": "1234",
+            "name": "Rajat",
+            "role": "Supervisor",
+            "address": "Behind Biba and Bajaj Show Room, Closed to Sony signal & PVR Forum M",
+            "supervisorid": "4657",
+            "password": "zzxb1876"
+        }
+
+    ]
+}

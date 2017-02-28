@@ -1,0 +1,127 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("../images/background.jpg");
+    background-size: cover;
+
+}
+header{
+	 display: flex;
+	 flex-direction: row;
+	 height: 60px;
+	 width: 100%;
+	 background-image: -moz-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+     background-image: -webkit-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+     background-image: -ms-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+		
+
+
+	
+}
+.logo{
+
+	left: 0;
+	top: 0;
+
+	height: 60px;
+	width: 20%;
+	text-align: right;
+	
+
+	
+
+}
+
+.sn_logo{
+	
+	margin-top: 10px;
+	height:30px;
+	width: 15px; 
+	z-index: 4;
+}
+.background_layer{
+	height: 60px;
+	width: 55%;
+
+
+	
+}
+.layer{
+	height: 60px;
+	opacity: 0.9;
+	/*width: 70%;*/
+	/*z-index: 1;*/
+
+}
+.name_pic{
+
+	display: flex;
+	flex-direction: row;
+
+	width: 20%;
+	height: 60px;
+	
+	text-align: right;
+
+	
+
+}
+.name{
+	
+	font-family: "SapientCentroSlab";
+	margin-top: 15px;
+
+}
+.profile_pic{
+
+	height: 50px;
+	width: 50px;
+	margin-left: 5px;
+
+}
+.Round_corner{
+	border-style: solid;
+   border-width: 1px;
+  border-color: rgb(144, 144, 144);
+  border-radius: 10px;
+  /*background-color: rgb(0, 0, 0);*/
+  opacity: 0.9;
+
+
+}
+section{
+	
+    width: 80%;
+    margin:auto; 
+}
+
+
+
+footer .copyright{
+	 /* background-color: black;*/
+	 background: linear-gradient(to bottom , rgba(0,0,0,0), rgba(0,0,0,1));
+	 height: 60px;
+	 color: #ffffff;
+	 font-size: 16px;
+/*	 font-family: "SapientCentroSlab";*/
+     padding-left: 10%;
+	 position: fixed;
+     text-transform: uppercase;
+	 text-align: left;
+	 bottom:0;
+     width: 90%;
+     z-index: 153;
+	 
+}
+
+
+footer .pattern{
+	 background-image: url("../images/pattern.png");
+	 background-size: cover;
+	 height: 20px;
+	 position: fixed;
+	 bottom:0;
+	 width: 100%;
+     z-index: 153;
+	
+}

@@ -71,7 +71,7 @@ div.profile{
 }
 
 .skills-sec-content ul li{
-	list-style: none;
+
 	border-bottom: 1px solid #515151;
 }
 .skills-sec-content ul{
@@ -83,7 +83,7 @@ div.profile{
 	flex-grow: 6;
 	color: white;
 	text-align: left;
-	margin-top: 10px;
+	
 }
 .skill-level{
 	flex-grow: 1;
@@ -91,11 +91,11 @@ div.profile{
 	background: -webkit-radial-gradient( #569406,#5c9b0a);
 	border-radius: 4px;
 	height: 20px;
-	margin-top: 10px;
+	
 }
 .list-element{
 	display: flex;
 	padding: 10px;
-	height: 40px;
+	height: 30px;
 }
 

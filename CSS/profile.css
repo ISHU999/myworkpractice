@@ -1,43 +1,53 @@
-	section, .skills{
-		display: flex;
-		width: 80%;
-		margin:auto;
-		border: 2px solid blue;
-	}
+section, .skills{
+   display: flex;
+}
 
-	section{
-		height: 500px;
-	}
+section{
+	padding-top: 50px;
+  height: 500px;	
+  margin-top: 100px;	
+}
 
-	.skills{
-		height: 450px;
-		width: 100%;
-		justify-content: space-between;
-	}
+.skills{
+  height: 450px;
+  width: 100%;
+  justify-content: space-between;
+  border: 4px solid pink;
+}
 
-	.container{
-		flex-grow: 1;
-	}
 
-	.container, .skills-sec{
-
-		flex-shrink: 1;
-		text-align: center;
+.container{
+	flex-grow: 1;
+}
+.container, .skills-sec{
+  flex-shrink: 1;
+  text-align: center;
+}
+.skills-sec{
+	width: 49%;
 	}
-	.skills-sec{
-		background-color: #424242;
-		border-radius: 4px;
-		width: 49%;
-	}
+.skills-sec-content{
+	background-color: #424242;
+	height: 430px;
+	border-radius: 4px;
+	border: 3px solid black;
+}
+.skills-sec-heading{
+	text-align: left;
+	margin-left: 5%;
+	color: white;
+}
+.container:last-of-type{
+  flex-grow: 2;
+}
 
-	.container:last-of-type{
-		flex-grow: 2;
-	}
-
-	.back-button{
-		text-align: left;
-		height: 50px;
-			border: 2px solid blue;
-		
-	}
-
+.back-button{
+  text-align: left;
+  height: 50px;
+}
+.skills-sec-content ul li{
+	list-style: none;
+}
+.skill-items{
+	display: inline;
+}

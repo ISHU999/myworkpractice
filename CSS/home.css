@@ -1,8 +1,82 @@
 
-header{
-	height: 100px;
-}
+.profile-img{
+			height: 200px;
+			width:180px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		div.polaroid{
+			
+			border-style: solid;
+  			border-width: 2px;
+  			border-radius: 5px;	
+			width:180px;
+			background-color:rgb(229,56,57);
+			margin-bottom: 25px;
 
-section{
-	background-image: "D:\Apache24\htdocs\Competency Matrix\image\background.png";
+		}
+		.container{
+			
+			font-family:sans-serif;	
+			color:white;
+			padding:15px;
+			/* line-height: 1em; */
+			font-size: 10px;	
+			padding-top: 0px;
+		}
+		
+		p.big{
+			/* line-height: 200% */
+		}
+
+	#search-bar{
+		border:none;
+		box-sizing: border-box;
+		border-bottom: 1px solid grey;
+		background: transparent;
+		position:absolute;
+		top:500px;
+		outline-style: none;
+		color:white;
+		background-image: url("../images/searchIcon.png");
+		background-position: 1px 1px top left; 
+		padding: 2px 2px 5px 30px;
+    	background-repeat: no-repeat;
+    	background-size: contain;
+	}
+	#search-bar:focus{
+		border-bottom: 1px solid white;
+	}
+
+		.user {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 2560px;
+  height: 1600px;
+  z-index: 12;
+}
+.Stephanie_Austria__103465__saustria_sapient_com {
+  font-size: 32px;
+  font-family: "SapientCentroSlab";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  
+  z-index: 11;
+}
+.bg {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(229, 56, 57);
+  border-radius: 10px;
+  background-image: -moz-linear-gradient( -90deg, rgb(222,39,40) 0%, rgb(208,34,35) 100%);
+  background-image: -webkit-linear-gradient( -90deg, rgb(222,39,40) 0%, rgb(208,34,35) 100%);
+  background-image: -ms-linear-gradient( -90deg, rgb(222,39,40) 0%, rgb(208,34,35) 100%);
+  position: absolute;
+  left: 338px;
+  top: 138px;
+  width: 440px;
+  height: 960px;
+  z-index: 9;
 }

@@ -7,13 +7,16 @@ body{
 }
 header{
 
-	position: absolute;
+	/*position: absolute;*/
 	left: 0;
 	top: 0;
 	/*border:2px solid green;*/
 	height: 60px;
 	width: 100%;
-	background-color: white;
+	background-image: -moz-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+
 	
 
 	
@@ -45,7 +48,7 @@ header{
 
 }
 .name{
-	margin-left: 15px;
+	margin-left: 9%;
 	line-height: 53px;
 	font-family: "SapientCentroSlab";
 

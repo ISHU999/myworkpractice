@@ -1,63 +1,150 @@
-section{
-	/*background-image: url(../images/background.png);*/
-	height:100%;
+input[type=text]
+{
+	background-image: url(../images/username1.png);
+	background-size: 10px 10px;
+	background-repeat: no-repeat;
+	background-position: 2% 30%;
+	border: none;
+	border-bottom: solid 1px #FFF;
+	background-color: transparent;
+	padding:0 0 3px 25px;
+	width:280px;
+}
+input[type=password]
+{
+	background-image: url(../images/password.png);
+	background-size: 10px 10px;
+	background-repeat: no-repeat;
+	background-position: 2% 50%;
+	border: none;
+	border-bottom: solid 1px #FFF;
+	background-color: transparent;
+	padding-left:25px;
+	width:280px;
+
+}
+
+
+/*
+.usernameandpassword{
+			
+			background-position: 2% 50%;
+			background-size: 12px 12px;
+			background-repeat: no-repeat;
+			padding:8px;
+			border: none;
+			border-bottom: solid 1px #FFF;
+			background-color: transparent;
+			height: 20px;
+			width: 250px;
+			color: rgba(255,255,255,1);
+			margin: 10px 25px 25px 10px;
+			font-family: 'Raleway', sans-serif;
+		}
+*/
+		#login
+		{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		#remember1
+		{
+			margin-top:20px; 
+		}
+
+
+
+		#user
+		{
+			margin-bottom: 20px;
+		}
+		
+		#password
+		{
+			margin-top: 40px;
+			margin-bottom: 20px;
+		}
+
+
+
+		#username:focus,#Rounded_Rectangle_1:focus{
+			outline: none;
+
+		}
+
+		#login_image{
+			height: 50px;
+	        width: 300px;
+	        margin-top: 20px;
+
+		}
+		.small_icons{
+	height: 10px;
+	width: 10px;
+}
+     #remember{
+     	color:#FFF;
+     	padding:8px;
+     	margin-top:20px;
+
+     }
+     div a{
+
+     	color :#FFF ;
+     	text-decoration: none;
+     }
+
+.container{
+	display: flex;
 	width:100%;
-	}
-#main_container{
-	margin:auto;
-	display:flex;
-	/*flex-direction: row;*/
-	border:2px solid blue;
-	height:500px;
-	width: 80%;
+	margin-top: 200px;
+}
 
+.topic{
+	 color: rgba(255,255,255,1);
+	 width: 49%;
+	 margin-right: 100px;
 }
-footer {
-	width:100%;
-	height:2%;
-	background-color: #ff0000;
-	 
+
+#Rounded_Rectangle_1 {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(229, 56, 57);
+  border-radius: 5px;
+  background-image: -moz-linear-gradient( -90deg, rgb(222,39,40) 0%, rgb(208,34,35) 100%);
+  background-image: -webkit-linear-gradient( -90deg, rgb(222,39,40) 0%, rgb(208,34,35) 100%);
+  background-image: -ms-linear-gradient( -90deg, rgb(222,39,40) 0%, rgb(208,34,35) 100%);
+	float: right;
+	margin-right: 45px;
+  width: 135px;
+  height: 30px;
+  z-index: 22;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: auto;
 }
-#Details{
-	/*margin: 40% 50% 40% 10%;*/
-	flex-grow:1;
-	 /*flex-shrink: 1;*/
+
+		.login{
+			
+			width: 49%;
 
 
-}
-#copyright{
-	font-size: 16px;
-	font-family: "SapientCentroSlab";
-	color: rgb(255, 255, 255);
-	text-transform: uppercase;
-	line-height: 1.2;
-	text-align: left;
-}
-#Project_Name{
-	font-family: "SapientCentroSlab";
-	color: blACK/*rgb(255, 255, 255)*/;
-	text-transform: uppercase;
-	line-height: 1;
-	text-align: left;
-	-moz-transform: matrix( 0.32665519356999,0,0,0.32683984650172,0,0);
-	-webkit-transform: matrix( 0.32665519356999,0,0,0.32683984650172,0,0);
-	-ms-transform: matrix( 0.32665519356999,0,0,0.32683984650172,0,0);
-	font-size: 3em;
-	display: block;
-	/*position: absolute;*/
-}
+		}
+		header{
+			height: 0px !important;
+		}
+
 #logo{
-	height:17px;
-    width:50px;
-    padding-left: 0;
-    padding-top: 0;
-    display: block;
-
+	
+	max-width: 25%;
+	max-height:25%;
 }
-#login{
-  border:2px solid black;
-  flex-grow:1;
-  /*flex-shrink: 1;*/
-  padding:150px 50px 100px 50px;
-
+h1{
+	font-size: 4em;
+	line-height: 5px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
 }

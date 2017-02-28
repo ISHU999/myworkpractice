@@ -15,9 +15,14 @@ header{
      background-image: -ms-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
 		
 
+
 	
 }
 .logo{
+
+	left: 0;
+	top: 0;
+
 	height: 60px;
 	width: 20%;
 	text-align: right;
@@ -46,6 +51,7 @@ header{
 	opacity: 0.9;
 	/*width: 70%;*/
 	/*z-index: 1;*/
+
 }
 .name_pic{
 
@@ -99,10 +105,10 @@ footer .copyright{
 	 font-size: 16px;
 /*	 font-family: "SapientCentroSlab";*/
      padding-left: 10%;
-	 position: absolute;
+	 position: fixed;
      text-transform: uppercase;
 	 text-align: left;
-	 top: 90%;
+	 bottom:0;
      width: 90%;
      z-index: 153;
 	 
@@ -113,8 +119,8 @@ footer .pattern{
 	 background-image: url("../images/pattern.png");
 	 background-size: cover;
 	 height: 20px;
-	 position: absolute;
-	 top: 97.5%;
+	 position: fixed;
+	 bottom:0;
 	 width: 100%;
      z-index: 153;
 	

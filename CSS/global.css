@@ -6,54 +6,72 @@ body{
 
 }
 header{
+	 display: flex;
+	 flex-direction: row;
+	 height: 60px;
+	 width: 100%;
+	 background-image: -moz-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+     background-image: -webkit-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+     background-image: -ms-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+		
+
 
 	
-	
+}
+.logo{
 	/*border:2px solid green;*/
+	left: 0;
+	top: 0;
 	height: 60px;
-	width: 100%;
-	background-color: white;
-	
-
-	
+	width: 20%;
+	text-align: right;
 }
 
 .sn_logo{
-	position: absolute;
-	left: 15%;
-	top: 15px;
+	
+	margin-top: 10px;
 	height:30px;
 	width: 15px; 
-	z-index: 2;
+	z-index: 4;
+}
+.background_layer{
+	height: 60px;
+	width: 55%;
+
+
+	
 }
 .layer{
-	position: absolute;
-	left: 20%;
 	height: 60px;
 	opacity: 0.9;
 	/*width: 70%;*/
 	/*z-index: 1;*/
-s
+
 }
 .name_pic{
-	position: absolute;
-	right: 15px;
+
+	display: flex;
+	flex-direction: row;
+
 	width: 20%;
 	height: 60px;
+	
+	text-align: right;
+
 	
 
 }
 .name{
-	margin-left: 15px;
-	line-height: 53px;
+	
 	font-family: "SapientCentroSlab";
+	margin-top: 15px;
 
 }
 .profile_pic{
-	margin-top: 3px;
-	margin-left: 5px;
+
 	height: 50px;
 	width: 50px;
+	margin-left: 5px;
 
 }
 .Round_corner{
@@ -63,7 +81,7 @@ s
   border-radius: 10px;
   /*background-color: rgb(0, 0, 0);*/
   opacity: 0.9;
-  position: absolute;
+
 
 }
 section{
@@ -82,10 +100,10 @@ footer .copyright{
 	 font-size: 16px;
 /*	 font-family: "SapientCentroSlab";*/
      padding-left: 10%;
-	 position: absolute;
+	 position: fixed;
      text-transform: uppercase;
 	 text-align: left;
-	 top: 90%;
+	 bottom:0;
      width: 90%;
      z-index: 153;
 	 
@@ -96,8 +114,8 @@ footer .pattern{
 	 background-image: url("../images/pattern.png");
 	 background-size: cover;
 	 height: 20px;
-	 position: absolute;
-	 top: 97.5%;
+	 position: fixed;
+	 bottom:0;
 	 width: 100%;
      z-index: 153;
 	

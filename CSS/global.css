@@ -1,3 +1,4 @@
+
 body{
 	margin: 0;
 	padding: 0;
@@ -5,17 +6,15 @@ body{
     background-size: cover;
 
 }
+
 header{
 
-	position: absolute;
 	left: 0;
 	top: 0;
 	/*border:2px solid green;*/
 	height: 60px;
 	width: 100%;
 	background-color: white;
-	
-
 	
 }
 
@@ -27,6 +26,7 @@ header{
 	width: 15px; 
 	z-index: 2;
 }
+
 .layer{
 	position: absolute;
 	left: 20%;
@@ -36,20 +36,21 @@ header{
 	/*z-index: 1;*/
 
 }
+
 .name_pic{
 	position: absolute;
 	right: 15px;
 	width: 20%;
 	height: 60px;
-	
-
 }
+
 .name{
 	margin-left: 15px;
 	line-height: 53px;
 	font-family: "SapientCentroSlab";
 
 }
+
 .profile_pic{
 	margin-top: 3px;
 	margin-left: 5px;
@@ -57,6 +58,7 @@ header{
 	width: 50px;
 
 }
+
 .Round_corner{
 	border-style: solid;
    border-width: 1px;
@@ -67,13 +69,12 @@ header{
   position: absolute;
 
 }
+
 section{
 	
     width: 80%;
     margin:auto; 
 }
-
-
 
 footer .copyright{
 	 /* background-color: black;*/

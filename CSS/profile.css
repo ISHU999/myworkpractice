@@ -1,14 +1,33 @@
-	section{
+	section, .skills{
    display: flex;
    width: 80%;
    margin:auto;
-
 }
 
-.container{
+section{
+  height: 500px;
+}
+
+.skills{
+  width:100%;
+  height: 450px;
+}
+
+
+
+.container, .skills-sec{
   border: 2px solid pink;
   flex-grow: 1; 
   flex-shrink: 1;
   text-align: center;
+}
+
+.container:last-of-type{
+  flex-grow: 2;
+}
+
+.back-button{
+  text-align: left;
+  height: 50px;
 }
 

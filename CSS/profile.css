@@ -52,6 +52,7 @@ section{
 }
 #profile_img{
   width: 230px;
+  border-top-left-radius: 
 }
 
 #profile_details{
@@ -66,6 +67,7 @@ div.profile{
   /*border: 2px solid orange;*/
   background-color: #d52425;
   margin-left: 5px;
+  border-radius: 10px;
 }
 
 .skills-sec-content ul li{

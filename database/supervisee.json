@@ -1,0 +1,69 @@
+{
+	"supervisee":
+	[
+
+{
+	"empid":"4563",
+	"name":"Akansha",
+	"role":"Associate",
+	"address":"BEHIND INNOVATIVE MULTIPLEX,10TH MAIN TULASI THEATRE ROAD",
+	"supervisorid":"1234"
+},
+
+{
+	"empid":"4564",
+	"name":"Shreyas",
+	"role":"Associate",
+	"address":"Bangalore Global Village, Rajarajeshwari Nagar, Uttarahalli Main Road, JSS, RNSIT, Mysore Road, BGS",
+	"supervisorid":"1234"
+},
+
+{
+	"empid":"4565",
+	"name":"Jatin",
+	"role":"Associate",
+	"address":"Ayyappan Temple, Yellamman Temple and Infosys Gate 6",
+	"supervisorid":"1234"
+},
+
+{
+	"empid":"4566",
+	"name":"Akshat",
+	"role":"Associate",
+	"address":"Ayyappan Temple, Yellamman Temple and Infosys Gate 6",
+	"supervisorid":"1234"
+},
+
+{
+	"empid":"4567",
+	"name":"Lalita",
+	"role":"Associate",
+	"address":"Ayyappan Temple, Yellamman Temple and Infosys Gate 6",
+	"supervisorid":"1234"
+},
+
+{
+	"empid":"4568",
+	"name":"John",
+	"role":"Associate",
+	"address":"Near suraksha vilaa",
+	"supervisorid":"1234"
+},
+{
+	"empid":""
+	"name":
+	"role":
+	"address":"Near BAGMANE BACK Gate and Ideal super market and behind c.k.r villa"
+	"supervisorid":
+},
+{
+	"empid":
+	"name":
+	"role":
+	"address":"HDFC Bank (0 km ), AP Aparan Hospital (2 km ), Indian Institute of Planning And Management"
+	"supervisorid":
+}
+
+}
+]
+}

@@ -52,7 +52,9 @@ section{
 }
 #profile_img{
   width: 230px;
-  border-top-left-radius: 
+  border-top-left-radius:8px;
+  border-top-right-radius:8px; 
+
 }
 
 #profile_details{
@@ -67,7 +69,7 @@ div.profile{
   /*border: 2px solid orange;*/
   background-color: #d52425;
   margin-left: 5px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .skills-sec-content ul li{

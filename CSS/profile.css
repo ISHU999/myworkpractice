@@ -1,13 +1,17 @@
 	section, .skills{
 		display: flex;
-		width: 80%;
+		width: 75%;
 		margin:auto;
-		border: 2px solid blue;
+		/*border: 2px solid blue;*/
 	}
 
 	section{
 		height: 500px;
+
 	}
+   #profile_img{
+    width:210px;
+  }
 
 	.skills{
 		height: 450px;
@@ -15,8 +19,11 @@
 		justify-content: space-between;
 	}
 
-	.container{
+	.container:first-of-type{
+    width:210px;
 		flex-grow: 1;
+      border: 2px solid green;
+      background-color: #d62425; 
 	}
 
 	.container, .skills-sec{
@@ -31,14 +38,21 @@
 	}
 
 	.container:last-of-type{
-		flex-grow: 2;
+		flex-grow: 18;
 	}
 
 	.back-button{
 		text-align: left;
 		height: 50px;
-			border: 2px solid blue;
-		
+			/*border: 2px solid blue;	*/
 	}
+
+  #profile_details{
+    text-align: left;
+    color: white;
+    
+  }
+
+
 
 

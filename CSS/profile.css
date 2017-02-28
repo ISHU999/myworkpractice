@@ -1,0 +1,15 @@
+	#wrapper{
+   display: flex;
+   width: 80%;
+   margin:auto;
+
+}
+
+.container{
+  border: 2px solid pink;
+  flex-grow: 1; 
+  flex-shrink: 1;
+  text-align: center;
+}
+
+#

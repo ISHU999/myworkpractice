@@ -1,6 +1,6 @@
 .modal {
 	    background-image: url("../images/Layer 28.png");
-	    display: flex;
+	    display: none;
 	    height:100%;
 	    left: 0px;
 	    opacity: 0.8;

@@ -152,10 +152,7 @@ border-radius: 5px;
 }
 
 
-.sub-skill-check{
-	width: 8px;
-	height: 8px;	
-}
+
 
 .scroll{
  height: 420px;
@@ -189,3 +186,8 @@ border-radius: 5px;
 }
 
 
+.sub-skill-check img{
+	width:12px;
+	height:12px;
+		
+}

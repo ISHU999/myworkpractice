@@ -1,6 +1,6 @@
 .modal {
 	    background-image: url("../images/Layer 28.png");
-	    display: none;
+	    display:none;
 	    height:100%;
 	    left: 0px;
 	    opacity: 0.8;
@@ -12,27 +12,30 @@
 .inside_modal{
 
 	border-radius: 15px;
-
+	box-sizing: border-box;
 	background-color: rgb(66, 66, 66);
 	height: 150px;
 	margin: auto;
-	padding: auto;
-	width: 250px;
+		width: 250px;
 	z-index: 121;
 }
-p{
+.modal_p{
 
 	 font-size: 32px;
   font-family: "SapientCentroSlab";
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: center;
+  z-index: 122;
 	
+}
+.modal_td{
+	width: 50%;
 }
 label{
 	display: flex;
 }
-button{
+button,#submit_image{
  background-image: background-image: -webkit-linear-gradient(left, rgb(222, 39, 40) 0%, rgb(208, 34, 35) 100%);
  background-image: background-image: -o-linear-gradient(left, rgb(222, 39, 40) 0%, rgb(208, 34, 35) 100%);
  background-image: background-image: linear-gradient(to right, rgb(222, 39, 40) 0%, rgb(208, 34, 35) 100%);
@@ -53,3 +56,28 @@ button{
  z-index: 22;
 
  }
+ .modal_form{
+ 	height: 100%;
+ }
+
+ .modal_text{
+ 	font-size: 22px;
+  font-family: "SapientCentroSlab";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  z-index: 122;
+ }
+ #container_modal{
+ 	display: none;
+ }
+.input_text{
+ 	border-radius: 10px;
+ 	width: 80%;
+ }
+#submit_image
+{
+	margin-left: 10px;
+	margin-top: 10px;
+
+}

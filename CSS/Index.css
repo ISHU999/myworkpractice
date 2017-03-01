@@ -93,7 +93,6 @@ div a,div span
 	 color: rgba(255,255,255,1);
 	 margin: 0 100px 0 0;
 	 width: 49%;
-	
     }
 
 .login{
@@ -110,4 +109,9 @@ h1{
 	font-family: 'Raleway', sans-serif;
 	font-size: 4em;
 	line-height: 5px;
+	font-weight: normal;
+	
+  }
+  section{
+  	margin:auto;
   }

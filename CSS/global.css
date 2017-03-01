@@ -12,12 +12,13 @@ header{
 	 width: 100%;
 	 background-image: -moz-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
      background-image: -webkit-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
-     background-image: -ms-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
-		
-
-
-	
+     background-image: -ms-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);	
 }
+
+.self{
+	display: block;
+}
+
 .logo{
 	/*border:2px solid green;*/
 	left: 0;

@@ -2,20 +2,17 @@
 (function()
 {
 var checkbox=document.getElementById('customcheckbox');
-input=document.getElementsByTagName('input');
-username=input[0].value;
-var input;
-var username;
+var input=document.getElementsByTagName('input');
+var username=input[0].value;
 console.log(username);
   if (typeof(Storage) !== "undefined")
    {
-	if( username=="" && window.localStorage.length!=0)
+	if(username=="" && window.localStorage.length!=0)
 	           {
 	           	console.log('1');
-	         
 	           	 input[0].value=localStorage.username;
 	           	 checkbox.checked=true
-              	//input[0].innerHTML=localStorage.username;
+              	
               }
         checkbox.addEventListener('change',function()
         {

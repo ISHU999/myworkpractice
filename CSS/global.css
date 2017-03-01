@@ -19,14 +19,12 @@ header{
 	
 }
 .logo{
-
+	/*border:2px solid green;*/
 	left: 0;
 	top: 0;
 	height: 60px;
 	width: 20%;
 	text-align: right;
-	
-
 }
 
 .sn_logo{

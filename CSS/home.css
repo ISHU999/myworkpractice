@@ -1,8 +1,117 @@
 
-header{
-	height: 100px;
+.profile-img{
+			height: 200px;
+			width:180px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		div.polaroid{
+			
+			border-style: solid;
+  			border-width: 2px;
+  			border-radius: 5px;	
+			width:180px;
+			background-color:rgb(229,56,57);
+			margin-bottom: 25px;
+
+		}
+		.container{
+			
+			font-family:sans-serif;	
+			color:white;
+			padding:15px;
+			/* line-height: 1em; */
+			font-size: 10px;	
+			padding-top: 0px;
+		}
+		
+		p.big{
+			/* line-height: 200% */
+		}
+
+	#search-bar{
+		border:none;
+		box-sizing: border-box;
+		border-bottom: 1px solid grey;
+		background: transparent;
+		position:absolute;
+		top:500px;
+		outline-style: none;
+		color:white;
+		background-image: url("../images/searchIcon.png");
+		background-position: 1px 1px top left; 
+		padding: 2px 2px 5px 30px;
+    	background-repeat: no-repeat;
+    	background-size: contain;
+	}
+	#search-bar:focus{
+		border-bottom: 1px solid white;
+	}
+
+#search_bar{
+	border: none;
+	border-bottom: 1px solid grey;
+	background: transparent;
+}
+
+#search_bar:focus{
+	outline-style: none;
+	border-bottom: 1px solid white;
+}
+
+table{
+	color: white;
 }
 
 section{
-	background-image: "D:\Apache24\htdocs\Competency Matrix\image\background.png";
+	display: flex;
+}
+
+.polaroid{
+	width: 30%;
+}
+
+.supervisee{
+	width: 70%;
+}
+
+#delete_button{
+	height: 30px;
+	width: 30px;
+}
+
+
+/**{
+	border: 1px solid white;
+}*/
+
+.profile_image{
+	height: 200px;
+	width:180px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+div.polaroid{
+	
+	border-style: solid;
+		border-width: 2px;
+		border-radius: 5px;	
+	width:180px;
+	background-color:rgb(229,56,57);
+	margin-bottom: 25px;
+}
+
+.container{
+	
+	font-family:sans-serif;	
+	color:white;
+	padding:15px;
+	/* line-height: 1em; */
+	font-size: 10px;	
+	padding-top: 0px;
+}
+
+p.big{
+	/* line-height: 200% */
 }

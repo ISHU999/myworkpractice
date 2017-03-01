@@ -1,42 +1,54 @@
 <!DOCTYPE html>
-<html en="lang">
+<html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Login Page</title>
-	<link rel="stylesheet" href="../CSS/Index.css">
-	<link rel="icon" href="../images/favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <link rel="stylesheet" href="../CSS/global.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
+
 <body>
-<header id="header" class="">
+
+    <header id="header" class="">
+   
+    </header>
+
+    <section>
+        <div class="container">
+       <div class="topic"> 
+            <img src="../images/SNLockup.png" alt="SapientNitro logo" id="logo">
+            <h1>COMPETENCY<p>MATRIX</p></h1>
+       </div>
+
+        <div class="login">
+            <form action="forgot_submit" method="POST" accept-charset="utf-8">
+                    <div id="user"><input type="text" name="username" value="" placeholder="Username" required="required" class="usernameandpassword"></div>
+					<div id="password"><input type="password" name="password" placeholder="Password" required="required" class="usernameandpassword"></div>
+					<div id ="login"><input type="image" name="login_image" value="" src="../images/login.png" alt="login" id="login_image"></a></div>
+					<div id="remember1"><img src="../images/remember_me.png"  alt="remember_me_checkbox" class="small_icons"><span id="remember">Remember me</span></div>
+
+
+					<div><a href="forgot.html">Forgot Password?</a></div>
+
+            </form>
+        </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+	<div class="copyright" ><p>COPYRIGHT &copy; 2006-2017 SAPIENT</p></div>
 	
-</header><!-- /header -->
-	<section>
-	    <div id="main_container">
-	    	<div id="Details">
-			    <div id="sapient_logo">
-			    	<img src="../images/SapientNitro.png" alt="sapientLogo" id="logo">
-			    </div>
-				<div id="Project_Name">
-				COMPETENCY MATRIX
-				</div>
-			</div>	
-			<div id="login">
-				<form action="#" method="POST" accept-charset="utf-8">
-					<div>
-						<input type="image" name="user_image" value="" src="../images/username.png" placeholder=""><input type="text" name="username" value="" placeholder="Username" required="required">
-					</div>
-					<div><input type="password" name="password" placeholder="Password" required="required"></div>
-					<div><a href="Index.html" alt="login"><img src="..images/login.png" alt="login"></a></div>
-					<div><input type="checkbox" name="remember" value="">Rememeber Me</div>
-					<div><a href="Forgot_pass.html">Forgot Password?</a></div>
-				</form>
-			</div>
-		</div>
-		<span id="copyright">Copyright &copy;2006-2017 <b>Sapient</b> </span>
-	</section>
-	<footer>
-	 
- 	</footer>
+	<div class="pattern"></div>
+	
+
+ </footer>
 </body>
+
 </html>

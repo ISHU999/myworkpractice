@@ -7,10 +7,10 @@ show.addEventListener('click', show_sublist);
 function show_sublist(){
 	console.log('called')
 	var sublist = document.getElementsByClassName('sub-list-group');
-	console.log(sublist);
+	console.log(sublist[0]);
 
-	sublist[0].setAttribute('style', 'display:block');
-	
+	//sublist[1].setAttribute('style', 'display:block');
+	sublist[0].className+=('show');	
 }
 function rating(){
   	 

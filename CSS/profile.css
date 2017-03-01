@@ -147,6 +147,36 @@ height:40px;
 border-radius: 5px;
 }
 
+#Add-Skills{
+  border: none;
+  color: white;
+  background-image: url("../images/addsymbol.png");
+  background-color: #dd2728;
+  background-position: 2% 50%;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding-left: 40px;
+  /*border-radius: 5px;*/
+  text-align: center;
+  font-size: 1.1em;
+
+}
+#Edit{
+  border: none;
+  color: black;
+  background-image: url("../images/editsymbol.png");
+  background-color: #fdfdfd;
+  background-position: 2% 50%;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding-left: 40px;
+  /*border-radius: 5px;*/
+  text-align: center;
+  font-size: 1.1em;
+
+}
+
+
 .sub-list-group{
 	display: none;
 }

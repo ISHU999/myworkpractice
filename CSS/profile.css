@@ -122,15 +122,6 @@ div.profile{
 	border-bottom: 1px solid #515151;
 }
 
-
-
-
-
-.addskills{
-    flex-grow: 3;
-  margin-left: 25%;
-
-}
 .edit{
   flex-grow: 1;
   color: white;
@@ -224,4 +215,20 @@ border-radius: 5px;
 	width:12px;
 	height:12px;
 		
+}
+@media screen and (min-width:931px)
+{
+.addskills{
+    flex-grow: 3;
+  margin-left: 25%;
+
+}
+}
+
+@media screen and (max-width:930px)
+{
+ .addskills{
+    flex-grow: 3;
+
+}
 }

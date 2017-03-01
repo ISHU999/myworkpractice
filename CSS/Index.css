@@ -7,7 +7,7 @@ input[type=text]
 	background-repeat: no-repeat;
 	border: none;
 	border-bottom: solid 1px #696969;
-	color : #696969;
+	color : #FFF;
 	padding:0 0 3px 25px;
 	width:280px;
 }
@@ -20,7 +20,7 @@ input[type=password]
 	background-repeat: no-repeat;
 	border: none;
 	border-bottom: solid 1px #696969;
-	color : #696969;
+	color : #FFF;
 	padding:0 0 3px 25px;
 	width:280px;
 

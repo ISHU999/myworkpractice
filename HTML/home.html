@@ -62,7 +62,7 @@
         <!-- THIS IS DELETE MODAL HTML!-->
         <div class="modal" id="container_modal">
             <div class="inside_modal">
-                <p>Confirm Delete?</p>
+                <p class="modal_p">Confirm Delete?</p>
                 <label for="">
                     <button id="modal_delete_btn">Yes</button>
                     <button id="modal_delete_btn_deny">No</button>
@@ -76,21 +76,21 @@
 		<div class="inside_modal">
 
 		
-		<form action="delete_modal_home_submit" method="get">
+		<form class="modal_form" action="delete_modal_home_submit" method="get">
 		<table>
 			<tr>
-			<td><label class="modal_text" for="name">Name</label></td>
-			<td><input class="input_text" type="text" name="name" value="Dummy_name" placeholder="Enter name"></td>
+			<td class="modal_td"><label class="modal_text" for="name">Name</label></td>
+			<td class="modal_td"><input class="input_text" type="text" name="name" value="Dummy_name" placeholder="Enter name"></td>
 			</tr>
 			<tr>
-				<td><label class="modal_text" for="id">ID</label></td>
-				<td><input class="input_text" type="text" name="id" value="Dummy_id" placeholder="" contenteditable="false"></td>
+				<td class="modal_td"><label class="modal_text" for="id">ID</label></td>
+				<td class="modal_td"><input class="input_text" type="text" name="id" value="Dummy_id" placeholder="" contenteditable="false"></td>
 			</tr>
 			<tr>
-				<td><label class="modal_text" for="Role">Role</label></td>
-				<td><input class="input_text" type="text" name="Role" value="Dummy_role" placeholder="" contenteditable="true"></td>
+				<td class="modal_td"><label class="modal_text" for="Role">Role</label></td>
+				<td class="modal_td"><input class="input_text" type="text" name="Role" value="Dummy_role" placeholder="" contenteditable="true"></td>
 			</tr>
-			<tr style="justify-content: center;"><td id="submit_btn"><input type="submit" name="" value="Save" placeholder="" id="submit_image"></td></tr>
+			<tr ><td class="modal_td" id="submit_btn"><input type="submit" name="" value="Save" placeholder="" id="submit_image"></td></tr>
 		</table>	
 		</form>
 		</div>

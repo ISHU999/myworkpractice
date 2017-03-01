@@ -19,7 +19,7 @@
 		width: 250px;
 	z-index: 121;
 }
-p{
+.modal_p{
 
 	 font-size: 32px;
   font-family: "SapientCentroSlab";
@@ -29,7 +29,7 @@ p{
   z-index: 122;
 	
 }
-td{
+.modal_td{
 	width: 50%;
 }
 label{
@@ -56,7 +56,7 @@ button,#submit_image{
  z-index: 22;
 
  }
- form{
+ .modal_form{
  	height: 100%;
  }
 
@@ -71,7 +71,7 @@ button,#submit_image{
  #container_modal{
  	display: none;
  }
- .input_text{
+.input_text{
  	border-radius: 10px;
  	width: 80%;
  }

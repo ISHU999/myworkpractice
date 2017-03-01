@@ -152,11 +152,10 @@ border-radius: 5px;
   color: white;
   background-image: url("../images/addsymbol.png");
   background-color: #dd2728;
-  background-position: 2% 50%;
+  background-position: 5% 50%;
   background-repeat: no-repeat;
   background-size: 30px 30px;
   padding-left: 40px;
-  /*border-radius: 5px;*/
   text-align: center;
   font-size: 1.1em;
 
@@ -166,11 +165,10 @@ border-radius: 5px;
   color: black;
   background-image: url("../images/editsymbol.png");
   background-color: #fdfdfd;
-  background-position: 2% 50%;
+  background-position: 8% 50%;
   background-repeat: no-repeat;
   background-size: 30px 30px;
   padding-left: 40px;
-  /*border-radius: 5px;*/
   text-align: center;
   font-size: 1.1em;
 

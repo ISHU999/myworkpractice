@@ -99,5 +99,10 @@ div.profile{
 	display: flex;
 	padding: 10px;
 	height: 30px;
+  flex-direction: row;
+}
+
+.list-element1{
+  /*display: none;*/
 }
 

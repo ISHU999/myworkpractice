@@ -6,6 +6,7 @@ section{
 	display: flex;
 	height: 500px;	
 	padding-top: 50px;
+	margin: 0 auto;
 }
 
 .profile_container, .list_container{

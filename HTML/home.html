@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,70 +8,69 @@
     <link rel="stylesheet" href="../CSS/global.css">
     <link rel="stylesheet" href="../CSS/home.css">
     <link rel="stylesheet" href="../CSS/modal.css">
+	<link rel="icon" href="">
 </head>
 
 <body>
     <header>
-        <img src="../images/SN_logo.png" alt="Sapient Logo" class="sn_logo" />
-        <img src="../images/header_background.png" class="layer" />
-        <div class="name_pic">
-            <span class="name">Stephanie Austria </span>
-            <img src="../images/stephanie.png" alt="Profile picture" class="profile_pic Round_corner" />
-        </div>
+        <div class="logo">
+			<img src="../images/SN_logo.png" alt="Sapient Logo" class="sn_logo"/>
+		</div>
+		<div class="background_layer">
+		    <img src="../images/header_background.png" class="layer" />
+		</div>
+		<div class="name_pic">
+			<span class="name">Stephanie Austria </span>
+			<img src="../images/stephanie.png" alt="Profile picture" class="profile_pic Round_corner"/>
+		</div>
     </header>
     
     <section>
-        <div class="polaroid">
-            <img src="../images/stephanie.png" alt="Stephanie" class="profile_image">
-            <div class="container">
-                <p class="big">
-                    <p><span style="font-size:1.1em; font-weight: bold;">Stephanie Austria</span></p>
-                    <p>127479</p>
-                    <p>Manager - Project Management</p>
-                    <p>Virgo Block Sapient</p>
-                </p>
-            </div>
-        </div>
-        <div class="supervisee">
-            <form>
-                <input type="search" placeholder="Search" id="search_bar">
-            </form>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>EMP. ID</th>
-                        <th>EMP. NAME</th>
-                        <th>ROLE</th>
-                        <th>ACTION</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="../images/stephanie.png" style="height: 20px; width: 20px;"></td>
-                        <td>124348</td>
-                        <td>Stephanie</td>
-                        <td>Associate L1</td>
-                        <td>
-                            <input type="image" src="../images/delete_button.png" id="delete_button">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <div class="profile_container">
+			<div class="profile">
+            	<img id="profile_img" src="../images/profile_img.jpg" alt="Profile picture">
+				<div id="profile_details">
+					<p>Stephanie Austria</p>
+					<p>103465</p>
+					<p>saustria@sapient.com</p>
+					<p>Manager - Program Management</p>
+					<p>Seat #99, Virgo Block <br>BCBP Bangalore </p>
+				</div>
+			</div>	
+		</div>
+
+		<div class="list_container">
+			<div class="search_bar">
+				<form>
+	                <input type="search" placeholder="Search" id="search_bar">
+	            </form>
+			</div>
+			<div><p id="list_heading">Your Supervisees</p></div>
+	        <div class="supervisee_list">
+				<div class="supervisee_details">
+					<div class="user_details">1</div>
+					<div class="emp_id user_details">2</div>
+					<div class="emp_name user_details">3</div>
+					<div class="role user_details">4</div>
+					<div class="action user_details">5</div>
+				</div>
+	        </div>
+	    </div>
+
         <!-- THIS IS DELETE MODAL HTML!-->
-        <div class="modal" id="container_modal">
+         <div class="modal" id="container_modal">
             <div class="inside_modal">
-                <p>Confirm Delete?</p>
+                <p id="modal_delete_para">Confirm Delete?</p>
                 <label for="">
                     <button id="modal_delete_btn">Yes</button>
                     <button id="modal_delete_btn_deny">No</button>
                 </label>
             </div>
         </div>
-        <!-- DELETE MODAL HTML ENDS!-->
+        <!-- DELETE MODAL HTML ENDS! -->
         <script type="text/javascript" src="../javascript/modal.js"></script>
         <script type="text/javascript" src="../javascript/home.js"></script>
+    
     </section>
 
     <footer>

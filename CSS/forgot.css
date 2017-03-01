@@ -88,7 +88,7 @@ section{
 
 }
 		
-#username:focus,#Rounded_Rectangle_1:focus{
+#username:focus,#send_password:focus{
 
   outline: none;
 

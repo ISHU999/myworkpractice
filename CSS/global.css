@@ -37,15 +37,11 @@ header{
 .background_layer{
 	height: 60px;
 	width: 55%;
-
-
 	
 }
 .layer{
 	height: 60px;
 	opacity: 0.9;
-	/*width: 70%;*/
-	/*z-index: 1;*/
 
 }
 .name_pic{
@@ -71,7 +67,7 @@ header{
 
 	height: 50px;
 	width: 50px;
-	margin-left: 5px;
+	margin:3px 0 0 3px;
 
 }
 .Round_corner{
@@ -79,7 +75,6 @@ header{
    border-width: 1px;
   border-color: rgb(144, 144, 144);
   border-radius: 10px;
-  /*background-color: rgb(0, 0, 0);*/
   opacity: 0.9;
 
 

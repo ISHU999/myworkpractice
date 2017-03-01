@@ -3,7 +3,8 @@
 
 	function valid (username) {
 		if(username==""){
-			alert ("Username field cannot be empty!");
+			//alert ("Username field cannot be empty!");
+			document.getElementById("username").focus();
 		}
 		else{
 			return true;
@@ -19,7 +20,7 @@
 			return false;
 		}
 		else{
-			alert ("Wrong Credentials");
+			//alert ("Wrong Credentials");
 			return false;
 		}
 	});

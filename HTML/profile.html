@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../CSS/profile.css">
 	<link rel="stylesheet" href="../CSS/global.css">
 	<link rel="icon" href="">
+
 </head>
 
 
@@ -25,14 +26,14 @@
 			<img src="../images/stephanie.png" alt="Profile picture" class="profile_pic Round_corner"/>
 		</div>
 	</header>
-
+	<button type="button" id="show">Show Dropdown</button>
 	
 	<section>
 
 
-<!-- just the profile part -->
-	
-
+		<!-- just the profile part -->
+		
+		
 		<div class="container">	
 			<div class="profile">	
 				<img id="profile_img" src="../images/profile_img.jpg" alt="Profile picture">
@@ -61,13 +62,38 @@
 									<div class="skill-items skill-item">HTML5</div>
 									<div class="skill-items skill-level">Expert</div>
 								</div>
-								<div class="sub-list-element">
-									<div class="sub-skill-items sub-skill-item">HTML5</div>
-									<div class="sub-skill-items sub-skill-star">Expert</div>
+
+								<div class="sub-list-group">
+									<div class="sub-list-element">
+										<span class="sub-skill-check"><input type="checkbox" name=""></span>
+										<div class="sub-skill-items sub-skill-item">Local Storage</div>
+										<div class="sub-skill-items sub-skill-star">Expert</div>
+									</div>
+									<div class="sub-list-element">
+										<span class="sub-skill-check"><input type="checkbox" name=""></span>
+										<div class="sub-skill-items sub-skill-item">Session Storage</div>
+										<div class="sub-skill-items sub-skill-star">Expert</div>
+									</div>
 								</div>
-								<div class="sub-list-element">
-									<div class="sub-skill-items sub-skill-item">HTML5</div>
-									<div class="sub-skill-items sub-skill-star">Expert</div>
+								
+							</li>
+							<li> 
+								<div class="list-element">
+									<span class="down-arrow">&#9660;</span>
+									<div class="skill-items skill-item">HTML5</div>
+									<div class="skill-items skill-level">Expert</div>
+								</div>
+								<div class="sub-list-group">
+									<div class="sub-list-element">
+										<span class="sub-skill-check"><input type="checkbox" name=""></span>
+										<div class="sub-skill-items sub-skill-item">Local Storage</div>
+										<div class="sub-skill-items sub-skill-star">Expert</div>
+									</div>
+									<div class="sub-list-element">
+										<span class="sub-skill-check"><input type="checkbox" name=""></span>
+										<div class="sub-skill-items sub-skill-item">Session Storage</div>
+										<div class="sub-skill-items sub-skill-star">Expert</div>
+									</div>
 								</div>
 							</li>
 							<li> 
@@ -76,13 +102,8 @@
 									<div class="skill-items skill-item">HTML5</div>
 									<div class="skill-items skill-level">Expert</div>
 								</div>
-							</li>
-							<li> 
-								<div class="list-element">
-									<span class="down-arrow">&#9660;</span>
-									<div class="skill-items skill-item">HTML5</div>
-									<div class="skill-items skill-level">Expert</div>
-								</div>
+
+								
 							</li>
 							<li> 
 								<div class="list-element">
@@ -114,6 +135,11 @@
 							</li>
 						</ul>
 					</div>
+					<li> 
+							<div class="button-list">
+								<div class="addskills"><input type="image" src="../images/addbutton.jpg" id="Add-Skills"></div>
+								<div class="edit"><input type="image" src="../images/editbutton.jpg" id="Edit"></div>
+							</li>
 
 				</div>
 				<div class="skills-sec">
@@ -172,6 +198,12 @@
 							</li>
 						</ul>
 					</div>
+					<li> 
+							<div class="button-list">
+								<div class="addskills"><input type="image" src="../images/addbutton.jpg" id="Add-Skills"></div>
+								<div class="edit"><input type="image" src="../images/editbutton.jpg" id="Edit"></div>
+							</li>
+
 
 				</div>
 			</div>
@@ -185,7 +217,7 @@
 
 
 	</footer>
-
+	<script src="../javascript/profile.js" type="text/javascript" charset="utf-8" async defer></script>
 
 </body>
-</html>
+</html>ss

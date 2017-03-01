@@ -82,13 +82,13 @@ div.profile{
 	padding: 0px;
 }
 
-.skill-item{
+.skill-item,.sub-skill-item{
 	flex-grow: 5;
 	color: white;
 	text-align: left;
 	margin-left: 10px;
 }
-.skill-level{
+.skill-level,.sub-skill-star{
 	flex-grow: 1;
 	color: white;
 	background: -webkit-radial-gradient( #569406,#5c9b0a);
@@ -96,10 +96,13 @@ div.profile{
 	height: 20px;
 	
 }
-.list-element{
+.list-element,.sub-list-element{
 	display: flex;
 	padding: 10px;
 	height: 30px;
+}
+.sub-list-element{
+	padding-left:45px;
 }
 
 .down-arrow:hover{

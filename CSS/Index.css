@@ -7,7 +7,7 @@ input[type=text]
 	background-repeat: no-repeat;
 	border: none;
 	border-bottom: solid 1px #696969;
-	color : #696969;
+	color : #FFF;
 	padding:0 0 3px 25px;
 	width:280px;
 }
@@ -20,7 +20,7 @@ input[type=password]
 	background-repeat: no-repeat;
 	border: none;
 	border-bottom: solid 1px #696969;
-	color : #696969;
+	color : #FFF;
 	padding:0 0 3px 25px;
 	width:280px;
 
@@ -31,87 +31,87 @@ input[type=checkbox]
 }
 #checkbox
 {
-	width: 15px;
-	height: 15px;
 	border: solid 1px #696969;	
+	height: 15px;
 	position: relative;
 	top:-17px; 
+	width: 15px;
 
 }
 div label
-{
-	width: 8px;
-	height: 8px;
+{	
 	border-radius: 100px;
 	cursor: pointer;
+	height: 8px;
+	left: 3.5px;
 	position: absolute;
 	top: 4px;
-	left: 3.5px;
+	width: 8px;
 }
 #checkbox input[type=checkbox]:checked+ label
 {
 	background-color: #FFF;
 }
 #login
-		{
-			margin: 40px 0 30px 0;
-		}
+{
+	margin: 40px 0 30px 0;
+}
 #user
-		{
-			margin: 0 0 20px 0;
-		}
+{
+	margin: 0 0 20px 0;
+}
 #password
-		{
-			margin: 40px 0 20px 0;
-		}
-input[type=text]:focus,input[type=password]{
-			outline: none;
-			}		
+{
+	margin: 40px 0 20px 0;
+}
+input[type=text]:focus,input[type=password]
+{
+	outline: none;
+}		
 #login_image
-       {
-			height: 50px;
-	        width: 300px;
-	   }
+{
+	height: 50px;
+    width: 300px;
+}
 div a,div span
-      {
-
-     	color : #FFF ;
-     	padding: 0 0 0 30px;
-     	text-decoration: none;
-     	
-     }
+{
+   	color : #FFF ;
+   	padding: 0 0 0 30px;
+   	text-decoration: none;
+}
 .container
-    {
+{
 	display: flex;
 	margin:200px 0 0 0;
 	width:100%;
-	
-    }
+}
 
 .topic
-    {
+{
 	 color: rgba(255,255,255,1);
 	 margin: 0 100px 0 0;
 	 width: 49%;
-    }
+}
 
-.login{
-		margin:0 0 0 50px;
-		width: 40%;
-		
-	  }
+.login
+{
+	margin:0 0 0 50px;
+	width: 40%;
+}
 
-#logo{
+#logo
+{
 	max-height:25%;
 	max-width: 25%;
-    }
-h1{
+}
+h1
+{
+	font-weight: normal;
 	font-family: 'Raleway', sans-serif;
 	font-size: 4em;
 	line-height: 5px;
-	font-weight: normal;
-	
-  }
-  section{
+}
+section
+{
   	margin:auto;
-  }
+}

@@ -21,6 +21,11 @@ header
 }
 
 
+.self{
+	display: block;
+}
+
+
 .logo{
 	  left: 0;
 	  top: 0;

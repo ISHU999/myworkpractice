@@ -1,5 +1,5 @@
 //For Local Storage
-(function()
+function remember_me()
 {
 var checkbox=document.getElementById('customcheckbox');
 input=document.getElementsByTagName('input');
@@ -34,7 +34,7 @@ console.log(username);
         })
     }
 
-})();
+}
 function validate(){
 var found = 0;
 var passmatch = 0;
@@ -61,8 +61,9 @@ xmlhttp.onreadystatechange = function() {
         		found=1;
         		if(password.value==myObj[i].password)
         		{
+              remember_me();
         			passmatch=1;
-        			window.location.assign("../HTML/home.html");
+        			window.location.href="../HTML/home.html";
         			break;
         		}
         		
@@ -90,5 +91,5 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 
 }
-
+remember_me();
 login_image.addEventListener('click',validate);

@@ -41,8 +41,8 @@
   background-image: -moz-linear-gradient( -90deg, rgb(222,39,40) 0%, rgb(208,34,35) 100%);
   background-image: -webkit-linear-gradient( -90deg, rgb(222,39,40) 0%, rgb(208,34,35) 100%);
   background-image: -ms-linear-gradient( -90deg, rgb(222,39,40) 0%, rgb(208,34,35) 100%);
-	float: right;
-	margin-right: 45px;
+  float: right;
+  margin-right: 45px;
   width: 135px;
   height: 30px;
   z-index: 22;

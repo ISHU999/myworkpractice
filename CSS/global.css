@@ -84,13 +84,6 @@ header
 
 
 }
-/* Style for header ends here */
-section{
-	
-    width: 80%;
-  
-}
-
 
 
 footer .copyright{
@@ -120,4 +113,32 @@ footer .pattern{
 	 width: 100%;
          z-index: 153;
 	
+}
+
+
+@media screen and (min-width:1100px)
+{
+	section{
+		
+	    width: 80%;
+	  
+	}
+}
+
+@media screen and (min-width:981px) and (max-width:1099px)
+{
+section{
+	
+    width: 90%;
+  
+}
+}
+
+@media screen and (max-width:980px)
+{
+section{
+	
+    width: 95%;
+  
+}
 }

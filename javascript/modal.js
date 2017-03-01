@@ -36,6 +36,7 @@
 	delete_yes.addEventListener('click',function(){
 		console.log('yes is working');
 		load();
+        delete_modal_view.setAttribute("style","display:none");
 
 	})
 	delete_no.addEventListener('click',function(){

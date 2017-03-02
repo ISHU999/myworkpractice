@@ -50,7 +50,7 @@ let url="http://localhost:30/myworkpractice/database/supervisor.json";
 
 var xmlhttp = new XMLHttpRequest();
 
-xmlhttp.onload = function() {
+xmlhttp.onload= function() {
     
     if (this.readyState == 4 && this.status == 200) {
         
@@ -78,7 +78,7 @@ xmlhttp.onload = function() {
             }
           }
 
-          }
+         
           
           if(found==1 && passmatch!=1)
           {
@@ -89,6 +89,7 @@ xmlhttp.onload = function() {
 
                 window.alert("username not found");
             }
+             }
           
         };
          

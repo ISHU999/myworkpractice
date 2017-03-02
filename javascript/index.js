@@ -1,73 +1,74 @@
-//For Local Storage
+(function(){
+   
 function on_load()  //to display the remembered username when the page loads.
 {
-
-input=document.getElementsByTagName('input');
-username=input[0].value;
-var input;
-var username;
-console.log(username);
-  if (typeof(Storage) !== "undefined")
-   {
-  if( username=="" && window.localStorage.length!=0)
-             {
-              console.log('1');
-           
-               input[0].value=localStorage.username;
-               checkbox.checked=true
-               
-              }
-          }
+    console.log("entering onload");
+    input=document.getElementsByTagName('input');
+    username=input[0].value;
+    var input;
+    var username;
+    console.log(username);
+    if (typeof(Storage) !== "undefined")
+       {
+          if( username=="" && window.localStorage.length!=0)
+                  {
+                  console.log('1');
+                  input[0].value=localStorage.username;
+                  var checkbox=document.getElementById('customcheckbox');
+                  checkbox.checked=true;
+                   
+                  }
+        }
+     
 }
-        function remember_me()  //the remember me functionality (storing in localStorage)
+function remember_me()  //the remember me functionality (storing in localStorage)
 {
-  var checkbox=document.getElementById('customcheckbox');
-        checkbox.addEventListener('change',function()
-        {
-       if(checkbox.checked==true)
-       {
-             input=document.getElementsByTagName('input');
-              username=input[0].value;
-              localStorage.setItem("username",username);
-              console.log(localStorage.username);
-       }
-       else
-       {
-        localStorage.removeItem('username');
-       }
-      
-        })
-    }
-function validate(){               //checking the credentials if they are valid or not.
+  console.log("entering remember_me");
+  checkbox=document.getElementById('customcheckbox');
+  if(checkbox.checked==false)
+  {
+    localStorage.removeItem('username');
+
+  } 
+  else{
+        input=document.getElementsByTagName('input');
+        username=input[0].value;
+        localStorage.setItem("username",username);
+        console.log(localStorage.username);
+      }
+}
+function validate(){    
+console.log("entering validate");           //checking the credentials if they are valid or not.
 var found = 0;
 var passmatch = 0;
 
-var userid = document.getElementById("uid");
+var username = document.getElementById("uname");
 
 var password = document.getElementById("psw");
 
-let url="http://localhost:3000/supervisor";
+let url="http://localhost:30/myworkpractice/database/supervisor.json";
 
 var xmlhttp = new XMLHttpRequest();
 
-xmlhttp.onreadystatechange = function() {
+xmlhttp.onload = function() {
     
     if (this.readyState == 4 && this.status == 200) {
-     
         
-         var myObj = JSON.parse(this.responseText);
+        myObj = JSON.parse(this.responseText);
        
-        for(let i=0;i<myObj.length;i++)
+        for(let i=0;i<myObj.supervisor.length;i++)
         
         {
-          
-          if(userid.value==myObj[i].empid)
+          if(username.value==myObj.supervisor[i].empid)
           {
             found=1;
-            if(password.value==myObj[i].password)
+            if(password.value==myObj.supervisor[i].password)
             {
-              
-                    // remember_me();
+              console.log('pass matxched');
+             // var checkbox=document.getElementById('customcheckbox');
+             // console.log(checkbox.checked);
+                    remember_me();
+                    console.log(checkbox.checked);
               passmatch=1;
               window.location.href="../HTML/home.html";
               break;
@@ -97,6 +98,6 @@ xmlhttp.send();
 
 }
 on_load();
-var login_image= document.getElementById("login_image");
-
+var login_image=document.getElementById('login_image');
 login_image.addEventListener('click',validate);
+})();

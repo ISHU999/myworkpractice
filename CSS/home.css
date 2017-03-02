@@ -8,11 +8,11 @@
     color: white;
     background-image: url("../images/search_button.png");
     background-position: 1px 1px top left;
-    padding: 2px 2px 5px 30px;
+    padding: 5px 2px 7px 40px;
     background-repeat: no-repeat;
     background-size: contain;
     /*background-size: 2%;*/
-    width: 80%;
+    width: 85%;
 }
 #search_bar:focus {
     border-bottom: 1px solid white;
@@ -62,12 +62,12 @@ section {
     width: 65%;
 }
 .search_bar {
-    height: 10%;
+    height: 5%;
     text-align: left;
 }
 .supervisee_details, .supervisee_title {
     /* border: 1px solid green; */
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     color: white;
     display: inline-flex;
     height: 12%;
@@ -77,6 +77,9 @@ section {
     height: 100%;
     text-align: center;
     width: 30%;
+}
+#heading_container{
+    padding-left: 2%;
 }
 #list_heading {
     text-align: left;
@@ -90,10 +93,4 @@ section {
 .supervisee_title{
     background-color: #2C2C2C;
     height: 9%;
-
-
 }
-/* *{
-	border: 1px solid white;
-}
- */

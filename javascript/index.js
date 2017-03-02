@@ -42,11 +42,11 @@ console.log("entering validate");           //checking the credentials if they a
 var found = 0;
 var passmatch = 0;
 
-var userid = document.getElementById("uid");
+var username = document.getElementById("uname");
 
 var password = document.getElementById("psw");
 
-let url="http://localhost:30/myworkpractice1/database/supervisor.json";
+let url="http://localhost:30/myworkpractice/database/supervisor.json";
 
 var xmlhttp = new XMLHttpRequest();
 
@@ -59,7 +59,7 @@ xmlhttp.onload = function() {
         for(let i=0;i<myObj.supervisor.length;i++)
         
         {
-          if(userid.value==myObj.supervisor[i].empid)
+          if(username.value==myObj.supervisor[i].empid)
           {
             found=1;
             if(password.value==myObj.supervisor[i].password)

@@ -117,7 +117,7 @@ footer .pattern{
 
 
 .scroll{
- height: 420px;
+ /*height: 420px;*/
  overflow-y: auto;
 }
 

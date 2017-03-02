@@ -9,7 +9,17 @@
             "address": "Behind Biba and Bajaj Show Room, Closed to Sony signal & PVR Forum M",
             "supervisorid": "4657",
             "password": "zzxb1876"
+        },
+        {
+            "empid": "5678",
+            "name": "Amitha",
+            "email":"amitha2304@gmail.com",
+            "role": "Supervisor",
+            "address": "near kalamandir,marathahalli,bengaluru",
+            "supervisorid": "4657",
+            "password": "abcd5678"
         }
+
 
     ]
 }

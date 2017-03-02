@@ -1,3 +1,4 @@
+
 (function() {
     var source1 = "../images/star_filled.png";
     var source2 = "../images/star_nonfilled.png";

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home Page</title>
     <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/profile_wall.css">
     <link rel="stylesheet" href="../CSS/home.css">
-    <!-- <link rel="stylesheet" href="../CSS/modal.css"> -->
+    <link rel="stylesheet" href="../CSS/modal.css">
 	<link rel="icon" href="">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -21,7 +24,8 @@
 			<span class="name">Stephanie Austria </span>
 			<img src="../images/stephanie.png" alt="Profile picture" class="profile_pic Round_corner"/>
 		</div>
-    </header>   
+    </header>
+    
     <section>
         <div class="profile_container">
 			<div class="profile">
@@ -35,6 +39,7 @@
 				</div>
 			</div>	
 		</div>
+
 		<div class="list_container">
 			<div class="search_bar">
 				<form>
@@ -42,7 +47,7 @@
 	            </form>
 			</div>
 			<div><p id="list_heading">Your Supervisees</p></div>
-	        <div class="supervisee_list" id="super_list">
+	        <div class="supervisee_list scroll" id="placeholder">
 				<div class="supervisee_details">
 					<div class="user_details">1</div>
 					<div class="emp_id user_details">2</div>
@@ -50,44 +55,135 @@
 					<div class="role user_details">4</div>
 					<div class="action user_details">5</div>
 				</div>
-	            <!-- <table>
-	                <thead>
-	                    <tr>
-	                        <th></th>
-	                        <th>EMP. ID</th>
-	                        <th>EMP. NAME</th>
-	                        <th>ROLE</th>
-	                        <th>ACTION</th>
-	                    </tr>
-	                </thead>
-	                <tbody>
-	                    <tr>
-	                        <td><img src="../images/stephanie.png" style="height: 20px; width: 20px;"></td>
-	                        <td>124348</td>
-	                        <td>Stephanie</td>
-	                        <td>Associate L1</td>
-	                        <td>
-	                            <input type="image" src="../images/delete_button.png" id="delete_button">
-	                        </td>
-	                    </tr>
-	                </tbody>
-	            </table> -->
+				<div class="supervisee_details">
+					<div class="user_details">1</div>
+					<div class="emp_id user_details">2</div>
+					<div class="emp_name user_details">3</div>
+					<div class="role user_details">4</div>
+					<div class="action user_details">5</div>
+				</div>
+				<div class="supervisee_details">
+					<div class="user_details">1</div>
+					<div class="emp_id user_details">2</div>
+					<div class="emp_name user_details">3</div>
+					<div class="role user_details">4</div>
+					<div class="action user_details">5</div>
+				</div>
+				<div class="supervisee_details">
+					<div class="user_details">1</div>
+					<div class="emp_id user_details">2</div>
+					<div class="emp_name user_details">3</div>
+					<div class="role user_details">4</div>
+					<div class="action user_details">5</div>
+				</div>
+				<div class="supervisee_details">
+					<div class="user_details">1</div>
+					<div class="emp_id user_details">2</div>
+					<div class="emp_name user_details">3</div>
+					<div class="role user_details">4</div>
+					<div class="action user_details">5</div>
+				</div>
+				<div class="supervisee_details">
+					<div class="user_details">1</div>
+					<div class="emp_id user_details">2</div>
+					<div class="emp_name user_details">3</div>
+					<div class="role user_details">4</div>
+					<div class="action user_details">5</div>
+				</div>
+				<div class="supervisee_details">
+					<div class="user_details">1</div>
+					<div class="emp_id user_details">2</div>
+					<div class="emp_name user_details">3</div>
+					<div class="role user_details">4</div>
+					<div class="action user_details">5</div>
+				</div>
+				<div class="supervisee_details">
+					<div class="user_details">1</div>
+					<div class="emp_id user_details">2</div>
+					<div class="emp_name user_details">3</div>
+					<div class="role user_details">4</div>
+					<div class="action user_details">5</div>
+				</div>
+				<div class="supervisee_details">
+					<div class="user_details">1</div>
+					<div class="emp_id user_details">2</div>
+					<div class="emp_name user_details">3</div>
+					<div class="role user_details">4</div>
+					<div class="action user_details">5</div>
+				</div>
+				<div class="supervisee_details">
+					<div class="user_details">1</div>
+					<div class="emp_id user_details">2</div>
+					<div class="emp_name user_details">3</div>
+					<div class="role user_details">4</div>
+					<div class="action user_details">5</div>
+				</div>
+				<div class="supervisee_details">
+					<div class="user_details">1</div>
+					<div class="emp_id user_details">2</div>
+					<div class="emp_name user_details">3</div>
+					<div class="role user_details">4</div>
+					<div class="action user_details">5</div>
+				</div>
+				<div class="supervisee_details">
+					<div class="user_details">1</div>
+					<div class="emp_id user_details">2</div>
+					<div class="emp_name user_details">3</div>
+					<div class="role user_details">4</div>
+					<div class="action user_details">5</div>
+				</div>
 	        </div>
 	    </div>
+
         <!-- THIS IS DELETE MODAL HTML!-->
-         <!-- <div class="modal" id="container_modal">
+         <div class="modal" id="container_modal">
             <div class="inside_modal">
+
                 <p id="modal_delete_para">Confirm Delete?</p>
+
+                <p class="modal_p">Confirm Delete?</p>
+
                 <label for="">
                     <button id="modal_delete_btn">Yes</button>
                     <button id="modal_delete_btn_deny">No</button>
                 </label>
             </div>
-                 </div> -->
-        <!-- DELETE MODAL HTML ENDS! -->
-        <!-- <script type="text/javascript" src="../javascript/modal.js"></script> -->
-        <script type="text/javascript" src="../javascript/home.js"></script>  
+        </div>
+
+
+        <!-- DELETE MODAL HTML ENDS!-->
+        <!-- SUPERVISEE EDIT MODAL BEGINS--><!-- THIS IS NEW MODAL HTML!-->
+		<div class="modal" id="container_modal_add">
+			<div class="inside_modal">
+	
+	<div class="modal" id="container_modal_add">
+		<div class="inside_modal">
+
+				<form class="modal_form" action="delete_modal_home_submit" method="get">
+					<table>
+						<tr>
+						<td class="modal_td"><label class="modal_text" for="name">Name</label></td>
+						<td class="modal_td"><input class="input_text" type="text" name="name" value="Dummy_name" placeholder="Enter name" readonly="readonly"></td>
+						</tr>
+						<tr>
+							<td class="modal_td"><label class="modal_text" for="id">ID</label></td>
+							<td class="modal_td"><input class="input_text" type="text" name="id" value="Dummy_id" placeholder="" readonly="readonly"></td>
+						</tr>
+						<tr>
+							<td class="modal_td"><label class="modal_text" for="Role">Role</label></td>
+							<td class="modal_td"><input class="input_text" type="text" name="Role" value="Dummy_role" placeholder="" contenteditable="true"></td>
+						</tr>
+						<tr ><td class="modal_td" id="submit_btn"><input type="submit" name="" value="Save" placeholder="" id="submit_image"></td></tr>
+					</table>	
+				</form>
+			</div>
+		</div>
+		<!--SUPERVISEE MODAL ENDS-->
+	    <script type="text/javascript" src="../javascript/modal.js"></script>
+	    <script type="text/javascript" src="../javascript/home.js"></script>
+    
     </section>
+
     <footer>
         <div class="copyright">
             <p>COPYRIGHT &copy; 2006-2017 SAPIENT</p>
@@ -95,4 +191,5 @@
         <div class="pattern"></div>
     </footer>
 </body>
+
 </html>

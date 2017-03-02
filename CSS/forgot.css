@@ -1,95 +1,76 @@
-.container{
-
-	display: flex;
-	margin-top: 200px;
-	width:100%;
-
+.container {
+    display: flex;
+    margin-top: 200px;
+    width: 100%;
 }
 
-header{
-
-	height: 0px !important;
-
+header {
+    height: 0px !important;
 }
 
-h1{
-	
-	font-size: 4em;
-	font-family: 'Raleway', sans-serif;
-	font-weight: normal;
-	line-height: 5px;
-
+h1 {
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    line-height: 5px;
 }
 
-#logo{
-	
-	max-height:25%;
-	max-width: 25%;
-
+#logo {
+    max-height: 25%;
+    max-width: 25%;
 }
 
-.recovery{
-			
-	width: 49%;
-			
+#recovery {
+    width: 49%;
 }
 
-section{
-
-  margin:auto;
-
+section {
+    margin: auto;
 }
 
 #send_password {
-
-  border-color: rgb(229, 56, 57);
-  background-image: -moz-linear-gradient( -90deg, rgb(222,39,40) 0%, rgb(208,34,35) 100%);
-  background-image: -webkit-linear-gradient( -90deg, rgb(222,39,40) 0%, rgb(208,34,35) 100%);
-  background-image: -ms-linear-gradient( -90deg, rgb(222,39,40) 0%, rgb(208,34,35) 100%);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 2px;
-  color: #fff;
-  float: right;
-  font-family: 'Raleway', sans-serif;
-  height: 30px;
-  margin-right: 45px;
-  padding: auto;
-  text-align: center;
-  text-transform: uppercase;
-  width: 135px;
-  z-index: 22;
-
+    border-color: rgb(229, 56, 57);
+    background-image: -moz-linear-gradient( -90deg, rgb(222, 39, 40) 0%, rgb(208, 34, 35) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb(222, 39, 40) 0%, rgb(208, 34, 35) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(222, 39, 40) 0%, rgb(208, 34, 35) 100%);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    color: #fff;
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    height: 30px;
+    margin-right: 45px;
+    padding: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 135px;
+    z-index: 22;
 }
 
-.topic{
-	 
-  color: rgba(255,255,255,1);
-  margin-right: 100px;
-  width: 49%;
-
+.topic {
+    color: rgba(255, 255, 255, 1);
+    margin-right: 100px;
+    width: 49%;
 }
 
-#username{
-
-  background-color: rgba(0,0,0,0);
-  background-image: url("../images/username.png");
-  background-position: 2% 50%;
-  background-repeat: no-repeat;
-  background-size: 12px 12px;
-  border: none;
-  box-shadow: 0px 0.5px 0px  0px #FFF;
-  color: rgba(255,255,255,1);
-  font-family: 'Raleway', sans-serif;
-  height: 20px;
-  margin: 10px 25px 25px 100px;
-  padding: 0 0 5px 25px;
-  width: 350px;
-
+#username {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/username.png");
+    background-position: 2% 50%;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    border: none;
+    box-shadow: 0px 0.5px 0px 0px #FFF;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Raleway', sans-serif;
+    height: 20px;
+    margin: 10px 25px 25px 100px;
+    padding: 0 0 5px 25px;
+    width: 350px;
 }
-		
-#username:focus,#send_password:focus{
 
-  outline: none;
-
+#username:focus,
+#send_password:focus {
+    outline: none;
 }

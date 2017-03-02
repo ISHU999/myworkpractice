@@ -112,12 +112,11 @@ footer .pattern{
 	 bottom:0;
 	 width: 100%;
          z-index: 153;
-	
 }
 
 
 .scroll{
- height: 420px;
+
  overflow-y: auto;
 }
 

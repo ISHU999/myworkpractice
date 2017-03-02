@@ -5,11 +5,12 @@
 	"empid":"4563",
 	"name":"Akansha",
 	"role":"Associate",
+    "image": "" ,
+    "email": "" ,
 	"address":"BEHIND INNOVATIVE MULTIPLEX,10TH MAIN TULASI THEATRE ROAD",
 	"supervisorid":"1234",
-	"email":"abc@gmail.com",
-	"image":"",
-	"primaryskill":[
+
+    	"primaryskill":[
 				{
 					"name":"html",
 					"subskills":[
@@ -51,7 +52,8 @@
 				}
 			],
 
-	"secondaryskill":[
+
+			"secondaryskill":[
 				{
 					"name":"htmlsdsd",
 					"subskills":[

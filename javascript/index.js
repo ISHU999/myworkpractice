@@ -46,39 +46,39 @@ var username = document.getElementById("uname");
 
 var password = document.getElementById("psw");
 
-let url="http://localhost:30/myworkpractice/database/supervisor.json";
+let url="http://localhost:3000/supervisor";
 
 var xmlhttp = new XMLHttpRequest();
 
-xmlhttp.onload= function() {
+xmlhttp.onreadystatechange = function() {
     
     if (this.readyState == 4 && this.status == 200) {
         
         myObj = JSON.parse(this.responseText);
-        console.log(myObj.supervisor.length);
+        console.log(myObj.length);
        
-        for(let i=0;i<myObj.supervisor.length;i++)
+        for(let i=0;i<myObj.length;i++)
         
         {
-          if(username.value==myObj.supervisor[i].empid)
+          if(username.value==myObj[i].empid)
           {
             found=1;
-            if(password.value==myObj.supervisor[i].password)
+            if(password.value==myObj[i].password)
             {
-              console.log('pass matxched');
+              console.log('pass matched');
              // var checkbox=document.getElementById('customcheckbox');
              // console.log(checkbox.checked);
                     remember_me();
                     console.log(checkbox.checked);
               passmatch=1;
-              sessionStorage.setItem('userId',userid.value);
-              window.location.href="../HTML/home.html";
+              sessionStorage.setItem('userID',username.value);
+              window.location.href="../home.html";
 
               break;
             }
           }
 
-         
+          }
           
           if(found==1 && passmatch!=1)
           {
@@ -89,7 +89,6 @@ xmlhttp.onload= function() {
 
                 window.alert("username not found");
             }
-             }
           
         };
          

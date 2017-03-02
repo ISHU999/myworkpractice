@@ -7,7 +7,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="../CSS/global.css">
     <link rel="stylesheet" href="../CSS/home.css">
-    <!-- <link rel="stylesheet" href="../CSS/modal.css"> -->
+    <link rel="stylesheet" href="../CSS/modal.css">
 	<link rel="icon" href="">
 </head>
 
@@ -46,7 +46,7 @@
 	            </form>
 			</div>
 			<div><p id="list_heading">Your Supervisees</p></div>
-	        <div class="supervisee_list">
+	        <div class="supervisee_list" id="placeholder">
 				<div class="supervisee_details">
 					<div class="user_details">1</div>
 					<div class="emp_id user_details">2</div>
@@ -58,7 +58,7 @@
 	    </div>
 
         <!-- THIS IS DELETE MODAL HTML!-->
-       <!--   <div class="modal" id="container_modal">
+         <div class="modal" id="container_modal">
             <div class="inside_modal">
 
                 <p id="modal_delete_para">Confirm Delete?</p>
@@ -70,14 +70,16 @@
                     <button id="modal_delete_btn_deny">No</button>
                 </label>
             </div>
-        </div> -->
+        </div>
 
 
         <!-- DELETE MODAL HTML ENDS!-->
         <!-- SUPERVISEE EDIT MODAL BEGINS--><!-- THIS IS NEW MODAL HTML!-->
-		<!-- <button id="btn_supervisee_edit">TEST BUTTON</button>
 		<div class="modal" id="container_modal_add">
 			<div class="inside_modal">
+	
+	<div class="modal" id="container_modal_add">
+		<div class="inside_modal">
 
 				<form class="modal_form" action="delete_modal_home_submit" method="get">
 					<table>
@@ -97,10 +99,10 @@
 					</table>	
 				</form>
 			</div>
-		</div> -->
+		</div>
 		<!--SUPERVISEE MODAL ENDS-->
-	   <!--  <script type="text/javascript" src="../javascript/modal.js"></script>
-	    <script type="text/javascript" src="../javascript/home.js"></script> -->
+	    <script type="text/javascript" src="../javascript/modal.js"></script>
+	    <script type="text/javascript" src="../javascript/home.js"></script>
     
     </section>
 

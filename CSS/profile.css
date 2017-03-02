@@ -93,13 +93,16 @@ div.profile{
 	padding: 0px;
 }
 
-.skill-item,.sub-skill-item{
+.skill-item{
 	flex-grow: 5;
 	color: white;
 	text-align: left;
 	margin-left: 10px;
 }
 .sub-skill-item{
+	flex-grow: 5;
+	color: white;
+	text-align: left;
 	margin-left: 30px;
 }
 .skill-level,.sub-skill-star{

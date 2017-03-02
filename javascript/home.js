@@ -42,13 +42,13 @@
         for (let i = 0; i < renderData.length; i++) {
             if (i % 2 == 0) {
                 containerData += "<div class='supervisee_details supervisee_even'><div class='user_details'>" + "image" +
-                    "</div><div class='user_details'>" + renderData[i].empid +
+                    "</div><div class='user_details'>" + renderData[i].id +
                     "</div><div class='user_details'>" + renderData[i].name +
                     "</div><div class='user_details'>" + renderData[i].role +
-                    "</div><div class='user_details'><a href='javascript:void(0)' class='icon_edit'><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)' class='icon_delete'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
+                    "</div><div class='user_details'><a href='javascript:void(0)' class='icon_edit' ><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)' class='icon_delete' data-emp='"+renderData[i].id+"'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
             } else {
                 containerData += "<div class='supervisee_details supervisee_odd'><div class='user_details'>" + "image" +
-                    "</div><div class='user_details'>" + renderData[i].empid +
+                    "</div><div class='user_details'>" + renderData[i].id +
                     "</div><div class='user_details'>" + renderData[i].name +
                     "</div><div class='user_details'>" + renderData[i].role +
                     "</div><div class='user_details'><a href='javascript:void(0)' class='icon_edit'><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)' class='icon_delete'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
@@ -56,6 +56,7 @@
         }
         document.getElementById("super_list").innerHTML = containerData;
         registerEvent();
+        registerDeleteEvent();
     }
     load();
     var search_bar = document.getElementById("search_bar");
@@ -105,4 +106,26 @@
 
         });
     }
+function registerDeleteEvent(){
+ var del = document.getElementsByClassName('icon_delete');
+ for(var i=0;i<del.length;i++)
+ {
+    del[i].addEventListener('click',function(event){
+        var empid=this.getAttribute('data-emp');
+        let url = "http://localhost:3000/supervisee/"+empid;
+        xhr.open("DELETE", url, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.onreadystatechange = function(){
+            if (xhr.readyState == 4 && xhr.status == 200) {
+               load(); 
+            }
+        };
+        xhr.send(null);
+    })
+ }
+    
+}
+
+
+
 })();

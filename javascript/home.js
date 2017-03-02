@@ -68,30 +68,14 @@
             if (item.name.toLowerCase().indexOf(searchField) > -1) {
                 newArray.push(item);
             }
-        })
+        });
         if (newArray.length > 0) {
             render_division(newArray);
             newArray = null;
         } else {
             document.getElementById("super_list").innerHTML = '<h4>No results found</h4>'
         }
-           load();
-            var search_bar = document.getElementById("search_bar");
-            var searchField;
-            search_bar.addEventListener("keyup", function() {
-                searchField = search_bar.value.toLowerCase();
-                var super_list=document.getElementById("super_list");
-                var newArray=[];
-                //response.supervisee.forEach(function(item, index){
-                response.forEach(function(item, index){
-                    if(item.name.toLowerCase().indexOf(searchField)>-1){
-                        newArray.push(item);
-                    } 
-                })
-                if(newArray.length>0){
-                    super_list.innerHTML=render_division(newArray);
-                    newArray=null;
-                }
+           
             });    
     search_bar.addEventListener("search", function() {
         render_division(response);

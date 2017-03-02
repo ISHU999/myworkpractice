@@ -1,76 +1,180 @@
-{"competancy":
-	[
-
 {
-	"empid":"4563",
+	"competancy":[
 
-	"PrimarySkills":[
-		{"html":{
-			"localstorage1":"1",
-			"sessionstorage1":"1"
-			}
+		{
+			"empid":"12345",
+
+			"primaryskill":[
+				{
+					"name":"html",
+					"subskills":[
+						{
+							"name":"localssdsdsdtorage",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES6",
+							"level":"1"
+						},
+						{
+							"name":"Ajax",
+							"level":"1"
+						}
+					]
+				}
+			],
+
+			"secondaryskill":[
+				{
+					"name":"htmlsdsd",
+					"subskills":[
+						{
+							"name":"localstorage1",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel1",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES61",
+							"level":"1"
+						},
+						{
+							"name":"Ajax1",
+							"level":"1"
+						}
+					]
+				}
+			]
 		},
-		{"css":[
-				{"localstorage2":"1"},
-				{"sessionstorage2":"1"}
-		]},
-		{"js":[
-				{"localstorage3":"1"},
-				{"sessionstorage3":"1"}
-		]}
-	],
+		{
+			"empid":"12545",
 
-	"SecondarySkills":[
-		{"html":[
-				{"localstorage":"1"},
-				{"sessionstorage":"1"}
-		] },
-		{"css":[
-				{"localstorage":"1"},
-				{"sessionstorage":"1"}
-		]},
-		{"js":[
-				{"localstorage":"1"},
-				{"sessionstorage":"1"}
-		]}
+			"primaryskill":[
+				{
+					"name":"html",
+					"subskills":[
+						{
+							"name":"localstorage",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES6",
+							"level":"1"
+						},
+						{
+							"name":"Ajax",
+							"level":"1"
+						}
+					]
+				}
+			],
+
+			"secondaryskill":[
+				{
+					"name":"html",
+					"subskills":[
+						{
+							"name":"localstorage1",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel1",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES61",
+							"level":"1"
+						},
+						{
+							"name":"Ajax1",
+							"level":"1"
+						}
+					]
+				}
+			]
+		}
+	
 	]
-},
-
-{
-	"empid":"4564",
-
-	"PrimarySkills":[
-		{"html":[
-				{"localstorage":"1"},
-				{"sessionstorage":"1"}
-		] },
-		{"css":[
-				{"localstorage":"1"},
-				{"sessionstorage":"1"}
-		]},
-		{"js":[
-				{"localstorage":"1"},
-				{"sessionstorage":"1"}
-		]}
-	],
-
-	"SecondarySkills":[
-		{"html":[
-				{"localstorage":"1"},
-				{"sessionstorage":"1"}
-		] },
-		{"css":[
-				{"localstorage":"1"},
-				{"sessionstorage":"1"}
-		]},
-		{"js":[
-				{"localstorage":"1"},
-				{"sessionstorage":"1"}
-		]}
-	]
-}
-
-
-
-]
 }

@@ -47,10 +47,15 @@
 			document.getElementById("username").value="";
 			if(hasMatch){
 
-			
+				var text="";
+                var len = 6;
+                let charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                for (var i = 0; i < len; i++) {
+                    text += charset.charAt(Math.floor((Math.random() * charset.length)));
+                }
+                console.log("random password :"+text);
+			emailjs.send("gmail","password",{"email":mail, "name":user.name, "message":"<b>"+text+"</b>"});
 
-
-			//emailjs.send("gmail","password",{"email":mail, "name":user.name, "message":"<b>ajuhbg4bijb</b>"});
 			redirect();
 			alert ("Password sent to your registered eMail address successfully!");
 			

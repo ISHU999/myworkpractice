@@ -1,0 +1,75 @@
+{"supervisee-skills":
+	[
+
+{
+	"empid":"4563",
+
+	"Primary Skills":[
+		{"html":[
+				{"localstorage":"1"},
+				{"sessionstorage":"1"}
+		] },
+		{"css":[
+				{"localstorage":"1"},
+				{"sessionstorage":"1"}
+		]},
+		{"js":[
+				{"localstorage":"1"},
+				{"sessionstorage":"1"}
+		]}
+	],
+
+	"Secondary Skills":[
+		{"html":[
+				{"localstorage":"1"},
+				{"sessionstorage":"1"}
+		] },
+		{"css":[
+				{"localstorage":"1"},
+				{"sessionstorage":"1"}
+		]},
+		{"js":[
+				{"localstorage":"1"},
+				{"sessionstorage":"1"}
+		]}
+	]
+},
+
+{
+	"empid":"4564",
+
+	"Primary Skills":[
+		{"html":[
+				{"localstorage":"1"},
+				{"sessionstorage":"1"}
+		] },
+		{"css":[
+				{"localstorage":"1"},
+				{"sessionstorage":"1"}
+		]},
+		{"js":[
+				{"localstorage":"1"},
+				{"sessionstorage":"1"}
+		]}
+	],
+
+	"Secondary Skills":[
+		{"html":[
+				{"localstorage":"1"},
+				{"sessionstorage":"1"}
+		] },
+		{"css":[
+				{"localstorage":"1"},
+				{"sessionstorage":"1"}
+		]},
+		{"js":[
+				{"localstorage":"1"},
+				{"sessionstorage":"1"}
+		]}
+	]
+}
+
+
+
+]
+}

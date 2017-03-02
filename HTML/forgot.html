@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -5,16 +6,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Forgot/Reset Password</title>
-    <link rel="icon" href="">
+   <link rel="icon" href="../images/favicon.png">
     <link rel="stylesheet" href="../CSS/forgot.css">
     <link rel="stylesheet" href="../CSS/global.css">
+
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-             emailjs.init("user_Z3mlGDEGBPCPkgla2MnNM");
-        })();
-    </script>
+	<script type="text/javascript">
+   	(function(){
+     	 emailjs.init("user_Z3mlGDEGBPCPkgla2MnNM");
+   })();
+</script>
 </head>
 
 <body>
@@ -28,25 +31,28 @@
             <img src="../images/SNLockup.png" alt="SapientNitro logo" id="logo">
             <h1>COMPETENCY<p>MATRIX</p></h1>
        </div>
-
-        <div class="recovery">
-            <!-- <form action="#" method="get" accept-charset="utf-8"> -->
-                <input type="text" name="" value="" placeholder="Username" id="username" required="required">
-                <input type="submit" name="" value="Send Password" id="send_password">
-            <!-- </form> -->
-        </div>
+        
+           <div class="recovery">
+            
+                <input type="text" name="" value="" placeholder="Username" id="username" required="required" aria-label="enter the username">
+                <input type="submit" name="" value="Send Password" id="send_password" aria-label="send password">
+            
+        </div> 
+        
+       
+        <!-- <p id="msg"></p> -->
         </div>
 
     </section>
 
     <script src="../javascript/forgot.js" type="text/javascript" charset="utf-8" async></script>
-
+    
 
     <footer>
-	<div class="copyright" ><p>COPYRIGHT &copy; 2006-2017 SAPIENT</p></div>
-	
-	<div class="pattern"></div>
-	
+    <div class="copyright" ><p>COPYRIGHT &copy; 2006-2017 SAPIENT</p></div>
+    
+    <div class="pattern"></div>
+    
 
  </footer>
 </body>

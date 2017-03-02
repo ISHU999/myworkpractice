@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home Page</title>
     <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/profile_wall.css">
     <link rel="stylesheet" href="../CSS/home.css">
     <link rel="stylesheet" href="../CSS/modal.css">
-	<link rel="icon" href="">
+	<link rel="icon" href="../images/favicon.png">
 </head>
 
 <body>
@@ -21,7 +22,14 @@
 		</div>
 		<div class="name_pic">
 			<span class="name">Stephanie Austria </span>
-			<img src="../images/stephanie.png" alt="Profile picture" class="profile_pic Round_corner"/>
+			<div class="header-dropdown">
+			<img src="../images/stephanie.png" alt="Profile picture" class="profile_pic Round_corner "/>
+			<div class="header-dropdown-content">
+               <a href="#">Edit Profile</a>
+               <a href="#">Log out</a>
+              
+            </div>
+            </div>
 		</div>
     </header>
     
@@ -46,7 +54,7 @@
 	            </form>
 			</div>
 			<div><p id="list_heading">Your Supervisees</p></div>
-	        <div class="supervisee_list" id="placeholder">
+	        <div class="supervisee_list scroll" id="super_list">
 				<div class="supervisee_details">
 					<div class="user_details">1</div>
 					<div class="emp_id user_details">2</div>
@@ -54,6 +62,7 @@
 					<div class="role user_details">4</div>
 					<div class="action user_details">5</div>
 				</div>
+				
 	        </div>
 	    </div>
 
@@ -75,33 +84,34 @@
 
         <!-- DELETE MODAL HTML ENDS!-->
         <!-- SUPERVISEE EDIT MODAL BEGINS--><!-- THIS IS NEW MODAL HTML!-->
+		<div class="modal" id="container_modal_add">
+			<div class="inside_modal">
 	
 	<div class="modal" id="container_modal_add">
 		<div class="inside_modal">
 
-		
-		<form class="modal_form" action="delete_modal_home_submit" method="get">
-		<table>
-			<tr>
-			<td class="modal_td"><label class="modal_text" for="name">Name</label></td>
-			<td class="modal_td"><input class="input_text" type="text" name="name" value="Dummy_name" placeholder="Enter name" readonly="readonly"></td>
-			</tr>
-			<tr>
-				<td class="modal_td"><label class="modal_text" for="id">ID</label></td>
-				<td class="modal_td"><input class="input_text" type="text" name="id" value="Dummy_id" placeholder="" readonly="readonly"></td>
-			</tr>
-			<tr>
-				<td class="modal_td"><label class="modal_text" for="Role">Role</label></td>
-				<td class="modal_td"><input class="input_text" type="text" name="Role" value="Dummy_role" placeholder="" contenteditable="true"></td>
-			</tr>
-			<tr ><td class="modal_td" id="submit_btn"><input type="submit" name="" value="Save" placeholder="" id="submit_image"></td></tr>
-		</table>	
-		</form>
+				<form class="modal_form" action="delete_modal_home_submit" method="get">
+					<table>
+						<tr>
+						<td class="modal_td"><label class="modal_text" for="name">Name</label></td>
+						<td class="modal_td"><input class="input_text" type="text" name="name" value="Dummy_name" placeholder="Enter name" readonly="readonly"></td>
+						</tr>
+						<tr>
+							<td class="modal_td"><label class="modal_text" for="id">ID</label></td>
+							<td class="modal_td"><input class="input_text" type="text" name="id" value="Dummy_id" placeholder="" readonly="readonly"></td>
+						</tr>
+						<tr>
+							<td class="modal_td"><label class="modal_text" for="Role">Role</label></td>
+							<td class="modal_td"><input class="input_text" type="text" name="Role" value="Dummy_role" placeholder="" contenteditable="true"></td>
+						</tr>
+						<tr ><td class="modal_td" id="submit_btn"><input type="submit" name="" value="Save" placeholder="" id="submit_image"></td></tr>
+					</table>	
+				</form>
+			</div>
 		</div>
-	</div>
-	<!--SUPERVISEE MODAL ENDS-->
-        <script type="text/javascript" src="../javascript/modal.js"></script>
-        <script type="text/javascript" src="../javascript/home.js"></script>
+		<!--SUPERVISEE MODAL ENDS-->
+	    <script type="text/javascript" src="../javascript/modal.js"></script>
+	    <script type="text/javascript" src="../javascript/home.js"></script>
     
     </section>
 

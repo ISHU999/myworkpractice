@@ -1,7 +1,6 @@
 (function (){
 
 	var send=document.getElementById("send_password");
-	console.log("ok");
 	var mail;
 	var xhr;
 
@@ -18,7 +17,7 @@
 
 	function load(){
 		initRequest();
-		let url="http://localhost:3000/supervisee";
+		let url="http://localhost:3000/supervisor";
 		xhr.open("GET",url,true);
 		xhr.onreadystatechange=processRequest;
 		xhr.send(null);
@@ -30,7 +29,6 @@
 			var response= xhr.responseText;
 			var data=JSON.parse(response);
 			console.log(username1+" from prqst");
-			// element.innerHTML=data.main.temp+"&degF";
 
 			var hasMatch =false;
 
@@ -38,26 +36,31 @@
 
  			var user = data[index];
 
- 			if(user.name == username1){
+ 			if(user.empid == username1){
    			hasMatch = true;
-   			mail=user.supervisorid;
+   			mail=user.email;
    			console.log(mail);
    			break;
  			}
 			}
-			username="";
-			//emailjs.send("gmail","new_password",{"email":mail});
+			console.log(hasMatch);
+			document.getElementById("username").value="";
+			if(hasMatch){
+			emailjs.send("gmail","password",{"email":mail, "name":user.name, "message":"<b>ajuhbg4bijb</b>"});
 			alert ("Password sent to your registered eMail address successfully!");
+		}
+			else{
+				alert("Wrong Credentials!");
+			}
    	    }
 	}
 
 
-	function valid () {
+	function valid (username) {
 
 		if(username==""){
 
-			console.log("button pressed"+username);
-			//alert ("Username field cannot be empty!");
+			console.log("Null value");
 			document.getElementById("username").focus();
 			return false;
 
@@ -75,23 +78,15 @@
 
 		
 	var username=document.getElementById("username").value;
-		if(valid()){
+		if(valid(username)){
 
 			
         	console.log(username);
-			//window.location = "index.html"; // Redirecting to login page
             
             load();
 
-            return false;
-
 		}
-		else{
-
-			//alert ("Wrong Credentials");
-			return false;
-
-		}
+		return false;
 
 	});
 

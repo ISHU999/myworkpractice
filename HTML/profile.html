@@ -8,7 +8,8 @@
 	<title>Profile</title>
 	<link rel="stylesheet" href="../CSS/profile.css">
 	<link rel="stylesheet" href="../CSS/global.css">
-	<link rel="icon" href="">
+	<link rel="stylesheet" href="../CSS/profile_wall.css">
+	<link rel="icon" href="../images/favicon.png">
 
 </head>
 
@@ -24,7 +25,14 @@
 		</div>
 		<div class="name_pic">
 			<span class="name">Stephanie Austria </span>
-			<img src="../images/stephanie.png" alt="Profile picture" class="profile_pic Round_corner"/>
+			<div class="header-dropdown">
+			<img src="../images/stephanie.png" alt="Profile picture" class="profile_pic Round_corner "/>
+			<div class="header-dropdown-content">
+               <a href="#">Edit Profile</a>
+               <a href="#">Log out</a>
+              
+            </div>
+            </div>
 		</div>
 	</header>
 	<button type="button" id="show">Show Dropdown</button>
@@ -49,7 +57,7 @@
 		</div>
 		<div class="container">
 
-			<div class="back-button"><span class="back-icon">&#x21a9;</span>Back</div>
+			<a href="home.html" class="back-button"><div class="back-button"><span class="back-icon">&#x21a9;</span>Back</div></a>
 			<div class="skills">
 				<div class="skills-sec">
 					
@@ -60,18 +68,16 @@
 
 								<div class="list-element">
 									<span class="down-arrow">&#9660;</span>
-									<div class="skill-items skill-item">HTML5</div>
-									<div class="skill-items skill-level">Expert</div>
+									<div class="skill-item">HTML5</div>
+									<div class="skill-level">Expert</div>
 								</div>
 
 								<div class="sub-list-group">
 									<div class="sub-list-element">
-										<div class="sub-skill-check">
-											<img src="../images/radio_on.png" alt="">
-										</div>
-										<div class="sub-skill-items sub-skill-item">Local Storage</div>
+											<div class="checkbox"><input type="checkbox" name="remember me" value="" aria-label="checkbox" id="customcheckbox"><label for="customcheckbox"></label></div>
+										<div class="sub-skill-item">Local Storage</div>
 
-										<div class="sub-skill-items sub-skill-item">
+										<div class="sub-skill-item">
 											<img src="../images/star_filled.png" alt="Stars" class="rating-star" />
 											<img src="../images/star_nonfilled.png" alt="Stars" class="rating-star" />
 											<img src="../images/star_nonfilled.png" alt="Stars" class="rating-star" />
@@ -80,11 +86,9 @@
 										</div>
 									</div>
 									<div class="sub-list-element">
-										<div class="sub-skill-check">
-											<img src="../images/radio_on.png" alt="">
-										</div>
-										<div class="sub-skill-items sub-skill-item">Session Storage</div>
-										<div class="sub-skill-items sub-skill-item">
+											<div class="checkbox"><input type="checkbox" name="remember me" value="" aria-label="checkbox" id="customcheckbox1"><label for="customcheckbox1"></label></div>
+										<div class="sub-skill-item">Session Storage</div>
+										<div class="sub-skill-item">
 											<img src="../images/star_filled.png" alt="Stars" class="rating-star" />
 											<img src="../images/star_nonfilled.png" alt="Stars" class="rating-star" />
 											<img src="../images/star_nonfilled.png" alt="Stars" class="rating-star" />
@@ -106,15 +110,15 @@
 										<div class="sub-skill-check">
 											<img src="../images/radio_on.png" alt="">
 										</div>
-										<div class="sub-skill-items sub-skill-item">Local Storage</div>
-										<div class="sub-skill-items sub-skill-star">Expert</div>
+										<div class="sub-skill-item">Local Storage</div>
+										<div class="sub-skill-star">Expert</div>
 									</div>
 									<div class="sub-list-element">
 										<div class="sub-skill-check">
 											<img src="../images/radio_on.png" alt="">
 										</div>
-										<div class="sub-skill-items sub-skill-item">Session Storage</div>
-										<div class="sub-skill-items sub-skill-star">Expert</div>
+										<div class="sub-skill-item">Session Storage</div>
+										<div class="sub-skill-star">Expert</div>
 									</div>
 								</div>
 							</li>
@@ -235,6 +239,7 @@
 				</div>
 			</div>
 		</div>
+		
 
 	</section>
 	<footer>

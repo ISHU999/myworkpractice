@@ -27,39 +27,35 @@
     function processResponse() {
         var division = "";
         if (xhr.readyState == 4 && xhr.status == 200) {
-            var element = document.getElementById("super_list");
             response = JSON.parse(xhr.responseText);
-            //console.log(response.supervisee[0].name);
-            console.log(response[0].name);
-            // division=render_division(response.supervisee);
-            division = render_division(response);
-            element.innerHTML = division;
+            render_division(response);
         }
     }
 
-    function render_division(renderData){
-            var containerData='';
-            containerData="<div class='supervisee_title'><div class='user_details'>" + "" + "</div><div class='user_details'>" + "EMP ID" + "</div><div class='user_details'>" + "EMP NAME" + "</div><div class='user_details'>" +"ROLE"+ "</div><div class='user_details'>" +"ACTION"+ "</div></div>"
-            for (let i = 0; i < renderData.length; i++) {
-                if (i % 2 == 0) {
-                    containerData += "<div class='supervisee_details supervisee_even'><div class='user_details'>" + "image" +
+    function render_division(renderData) {
+        var containerData = '';
+        containerData = "<div class='supervisee_title'><div class='user_details'>" +
+            "" + "</div><div class='user_details' id='empid'>" +
+            "EMP ID" + "</div><div class='user_details' id='empname'>" +
+            "EMP NAME" + "</div><div class='user_details' id='role'>" +
+            "ROLE" + "</div><div class='user_details'>" + "ACTION" + "</div></div>"
+        for (let i = 0; i < renderData.length; i++) {
+            if (i % 2 == 0) {
+                containerData += "<div class='supervisee_details supervisee_even'><div class='user_details'>" + "image" +
                     "</div><div class='user_details'>" + renderData[i].empid +
                     "</div><div class='user_details'>" + renderData[i].name +
                     "</div><div class='user_details'>" + renderData[i].role +
                     "</div><div class='user_details'><a href='javascript:void(0)' class='icon_edit'><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)' class='icon_delete'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
-                } 
-                else {
-                    containerData += "<div class='supervisee_details supervisee_odd'><div class='user_details'>" + "image" +
-                    "</div><div class='user_details'>" + renderData[i].empid + 
-                    "</div><div class='user_details'>" + renderData[i].name + 
-                    "</div><div class='user_details'>" + renderData[i].role + 
+            } else {
+                containerData += "<div class='supervisee_details supervisee_odd'><div class='user_details'>" + "image" +
+                    "</div><div class='user_details'>" + renderData[i].empid +
+                    "</div><div class='user_details'>" + renderData[i].name +
+                    "</div><div class='user_details'>" + renderData[i].role +
                     "</div><div class='user_details'><a href='javascript:void(0)' class='icon_edit'><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)' class='icon_delete'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
-                }
             }
-
+        }
         document.getElementById("super_list").innerHTML = containerData;
         registerEvent();
-    
     }
     load();
     var search_bar = document.getElementById("search_bar");
@@ -68,29 +64,31 @@
         searchField = search_bar.value.toLowerCase();
         var newArray = [];
         //response.supervisee.forEach(function(item, index){
-        response.forEach(function(item, index){
-            if(item.name.toLowerCase().indexOf(searchField)>-1){
+        response.forEach(function(item, index) {
+            if (item.name.toLowerCase().indexOf(searchField) > -1) {
                 newArray.push(item);
-            } 
+            }
         })
         if (newArray.length > 0) {
             render_division(newArray);
             newArray = null;
-        } else{
-           document.getElementById("super_list").innerHTML='<h4>No results found</h4>' 
-        }       
+        } else {
+            document.getElementById("super_list").innerHTML = '<h4>No results found</h4>'
+        }
     });
-    search_bar.addEventListener("search",function(){
+    search_bar.addEventListener("search", function() {
         render_division(response);
     });
+
     function sorting(responseData, property) {
         responseData.sort(function(curr, next) {
             return curr[property] > next[property];
         });
         if (responseData.length > 0) {
-            render_division(responseData);            
+            render_division(responseData);
         }
     }
+
     function registerEvent() {
         var empid = document.getElementById('empid');
         var empname = document.getElementById('empname');
@@ -106,5 +104,5 @@
 
         });
     }
-    
+    sessionStorage.empid = '127474';
 })();

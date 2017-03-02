@@ -1,25 +1,26 @@
-{"supervisee-skills":
+{"competancy":
 	[
 
 {
 	"empid":"4563",
 
-	"Primary Skills":[
-		{"html":[
-				{"localstorage":"1"},
-				{"sessionstorage":"1"}
-		] },
+	"PrimarySkills":[
+		{"html":{
+			"localstorage1":"1",
+			"sessionstorage1":"1"
+			}
+		},
 		{"css":[
-				{"localstorage":"1"},
-				{"sessionstorage":"1"}
+				{"localstorage2":"1"},
+				{"sessionstorage2":"1"}
 		]},
 		{"js":[
-				{"localstorage":"1"},
-				{"sessionstorage":"1"}
+				{"localstorage3":"1"},
+				{"sessionstorage3":"1"}
 		]}
 	],
 
-	"Secondary Skills":[
+	"SecondarySkills":[
 		{"html":[
 				{"localstorage":"1"},
 				{"sessionstorage":"1"}
@@ -38,7 +39,7 @@
 {
 	"empid":"4564",
 
-	"Primary Skills":[
+	"PrimarySkills":[
 		{"html":[
 				{"localstorage":"1"},
 				{"sessionstorage":"1"}
@@ -53,7 +54,7 @@
 		]}
 	],
 
-	"Secondary Skills":[
+	"SecondarySkills":[
 		{"html":[
 				{"localstorage":"1"},
 				{"sessionstorage":"1"}

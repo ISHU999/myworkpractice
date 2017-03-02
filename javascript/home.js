@@ -8,6 +8,10 @@
         } else if (window.ActiveXObject) {
             xhr = new ActiveXObject("Microsoft.XMLHTTP");
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 90c99d794f7a0a5a9fad0ebf0a36ad43985245f3
     }
     /* Make Ajax Call */
     function load() {
@@ -23,7 +27,6 @@
     /* Call Back fucntion */
     var supervisee_list = "";
     var response;
-
     function processResponse() {
         var division = "";
         if (xhr.readyState == 4 && xhr.status == 200) {
@@ -93,7 +96,6 @@
                     newArray=null;
                 }
             });    
-
     search_bar.addEventListener("search", function() {
         render_division(response);
     });
@@ -122,5 +124,4 @@
 
         });
     }
-    sessionStorage.empid = '127474';
 })();

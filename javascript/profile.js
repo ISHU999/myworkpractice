@@ -1,4 +1,4 @@
-(function() {
+    (function() {
     var source1 = "../images/star_filled.png";
     var source2 = "../images/star_nonfilled.png";
     var show = document.getElementById('show');
@@ -10,7 +10,7 @@
         var sublist = document.getElementsByClassName('sub-list-group');
         console.log(sublist.length);
 
-        sublist[5].setAttribute('style', 'display:block');
+        sublist[1].setAttribute('style', 'display:block');
 
     }
 

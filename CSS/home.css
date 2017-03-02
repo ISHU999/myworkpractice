@@ -1,143 +1,110 @@
-
-/* Page Layout and Styling */
-
-section{
-	
-	display: flex;
-	height: 500px;	
-	padding-top: 50px;
+#profile_img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 230px;
 }
-
-.profile_container, .list_container{
-	
-	flex-grow: 1;
-	text-align: center;
+#profile_details {
+    color: white;
+    font-size: 1.1em;
+    margin-left: 5px;
+    text-align: left;
 }
-
-.profile_container{
-	width: 10%;
+.profile {
+    /*border: 2px solid orange;*/
+    background-color: #d52425;
+    border-radius: 8px;
+    margin-left: 5px;
+    width: 230px;
 }
-
-.list_container{
-	/*border:1px solid blue;*/
-	height:135%;
-	width: 65%;
+#search_bar {
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid grey;
+    background: transparent;
+    outline-style: none;
+    color: white;
+    background-image: url("../images/search_button.png");
+    background-position: 1px 1px top left;
+    padding: 2px 2px 5px 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*background-size: 2%;*/
+    width: 80%;
 }
-
-#list_heading{
-	text-align: left;
+#search_bar:focus {
+    border-bottom: 1px solid white;
 }
-
-
-
-
-
-
-/* Side Profile Styling */
-
-.profile{
-	/*border: 2px solid orange;*/
-	background-color: #d52425;
-	border-radius: 8px;
-	margin-left: 5px;
-	width: 230px;
+input::-webkit-input-placeholder {
+    color: rgb(102, 102, 102);
+    font-size: 1.3em;
 }
-
-#profile_img{
-	border-top-left-radius:8px;
-	border-top-right-radius:8px; 
-	width: 230px;
+input:-moz-placeholder {
+    color: rgb(102, 102, 102);
+    font-size: 1.3em;
 }
-
-#profile_details{
-	color: white;
-	font-size: 1.1em;
-	margin-left: 5px;
-	text-align: left;
+input:-ms-input-placeholder {
+    color: rgb(102, 102, 102);
+    font-size: 1.3em;
 }
-
-
-
-
-
-/* Search Bar Styling */
-
-.search_bar{
-	height: 10%;
-	text-align: left;
+.supervisee_list {
+    height: 82%;
+    width: 80%;
+    /* border: 1px solid red; */
 }
-
-#search_bar{
-	/*background-size: 2%;*/
-	background: transparent;	
-	background-image: url("../images/search_button.png");
-	background-position: 1px 1px top left; 
-	background-repeat: no-repeat;
-	background-size: contain;
-	border:none;
-	border-bottom: 1px solid grey;
-	box-sizing: border-box;
-	color:white;
-	outline-style: none;
-	padding: 2px 2px 5px 30px;
-	width: 80%;
+#delete_button {
+    height: 30px;
+    width: 30px;
 }
-
-#search_bar:focus{
-	border-bottom: 1px solid white;
-}
-
-input::-webkit-input-placeholder{
-	color: rgb(102, 102, 102);
-	font-size: 1.3em;
-}
-
-input:-moz-placeholder{
-	color: rgb(102, 102, 102);
-	font-size: 1.3em;
-}
-
-input:-ms-input-placeholder{
-	color: rgb(102, 102, 102);
-	font-size: 1.3em;
-}
-
-
-
-
-
-/* Supervisee List Styling */
-
-.supervisee_list{
-	/*border: 1px solid red;*/
-	display: flex;
-	height: 82%;
-	width: 80%;
-}
-
-.supervisee_details{
-	/*border: 1px solid green;*/
-	color: white;
-	display: inline-flex;
-	height: 12%;
-	width: 100%;
-}
-
-.user_details{
-	height: 100%;
-	text-align: center;
-	width:30%;
-}
-
-
-
-
-
-
-body{
-	color: white;
-}
-
 /*div{
 	border: 1px solid white;
 }*/
+section {
+    color: white;
+    display: flex;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.profile_container, .list_container {
+    flex-grow: 1;
+    text-align: center;
+}
+.profile_container {
+    width: 10%;
+}
+.list_container {
+    /* border:1px solid blue; */
+    color: white;
+    height: 135%;
+    width: 65%;
+}
+.search_bar {
+    height: 10%;
+    text-align: left;
+}
+.supervisee_details {
+    /* border: 1px solid green; */
+    border-radius: 10px;
+    color: white;
+    display: inline-flex;
+    height: 12%;
+    width: 100%;
+}
+.user_details {
+    height: 100%;
+    text-align: center;
+    width: 30%;
+}
+#list_heading {
+    text-align: left;
+}
+.skill-item-Even {
+    background-color: #3d3d3d;
+}
+.skill-item-Odd {
+    background-color: #424242;
+}
+/* *{
+	border: 1px solid white;
+}
+ */

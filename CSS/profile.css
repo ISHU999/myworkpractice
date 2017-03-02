@@ -35,6 +35,10 @@ section{
 	/*flex-grow: 3;*/
 	width: 70%;
 }
+.rating-star{
+	height: 18px;
+	width: 18px;
+}
 
 .skills-sec{
 	width: 45%;
@@ -89,13 +93,16 @@ div.profile{
 	padding: 0px;
 }
 
-.skill-item,.sub-skill-item{
+.skill-item{
 	flex-grow: 5;
 	color: white;
 	text-align: left;
 	margin-left: 10px;
 }
 .sub-skill-item{
+	flex-grow: 5;
+	color: white;
+	text-align: left;
 	margin-left: 30px;
 }
 .skill-level,.sub-skill-star{
@@ -173,6 +180,9 @@ border-radius: 5px;
 	display: none;
 }
 
+.show{
+	display: block;
+}
 
 
 

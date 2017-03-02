@@ -47,15 +47,31 @@
 			document.getElementById("username").value="";
 			if(hasMatch){
 			emailjs.send("gmail","password",{"email":mail, "name":user.name, "message":"<b>ajuhbg4bijb</b>"});
+			redirect();
 			alert ("Password sent to your registered eMail address successfully!");
-		}
+			
+			}
 			else{
 				alert("Wrong Credentials!");
 			}
    	    }
 	}
 
-
+	function redirect(){
+		var timecount = 5;
+		var text=document.getElementById("recovery");
+  			text.innerHTML="You will be redirected to login page in "+timecount+" seconds" ;
+  			text.setAttribute("style","color: #fff");
+			setInterval(function(){
+    		timecount--;
+  			
+  			console.log('inside redirect')
+  			text.innerHTML="You will be redirected to login page in "+timecount+" seconds" ;
+  			text.setAttribute("style","color: #fff");
+    		if (timecount == 1) {
+       			 window.location = 'index.html'; 
+    		}},1000);
+	}
 	function valid (username) {
 
 		if(username==""){
@@ -85,9 +101,12 @@
             
             load();
 
+       
+
 		}
 		return false;
 
 	});
+	
 
 })();

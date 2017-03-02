@@ -51,7 +51,7 @@
                     "</div><div class='user_details'>" + renderData[i].id +
                     "</div><div class='user_details'>" + renderData[i].name +
                     "</div><div class='user_details'>" + renderData[i].role +
-                    "</div><div class='user_details'><a href='javascript:void(0)' class='icon_edit'><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)' class='icon_delete'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
+                    "</div><div class='user_details'><a href='javascript:void(0)' class='icon_edit'><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)' class='icon_delete' data-emp='"+renderData[i].id+"'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
             }
         }
         document.getElementById("super_list").innerHTML = containerData;
@@ -107,7 +107,7 @@
         });
     }
 
-    
+
 function registerDeleteEvent(){
  var del = document.getElementsByClassName('icon_delete');
  for(var i=0;i<del.length;i++)

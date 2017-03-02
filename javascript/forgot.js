@@ -26,7 +26,7 @@
 	function processRequest(){
 		let username1=document.getElementById("username").value;
 		if(xhr.readyState == 4 && xhr.status == 200){
-			var response= xhr.responseText;
+			let response= xhr.responseText;
 			var data=JSON.parse(response);
 			console.log(username1+" from prqst");
 
@@ -46,7 +46,11 @@
 			console.log(hasMatch);
 			document.getElementById("username").value="";
 			if(hasMatch){
-			emailjs.send("gmail","password",{"email":mail, "name":user.name, "message":"<b>ajuhbg4bijb</b>"});
+
+			
+
+
+			//emailjs.send("gmail","password",{"email":mail, "name":user.name, "message":"<b>ajuhbg4bijb</b>"});
 			redirect();
 			alert ("Password sent to your registered eMail address successfully!");
 			

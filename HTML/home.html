@@ -22,7 +22,13 @@
 		</div>
 		<div class="name_pic">
 			<span class="name">Stephanie Austria </span>
-			<img src="../images/stephanie.png" alt="Profile picture" class="profile_pic Round_corner"/>
+			<div class="header-dropdown">
+				<img src="../images/stephanie.png" alt="Profile picture" class="profile_pic Round_corner "/>
+				<div class="header-dropdown-content">
+	               <a href="#">Edit Profile</a>
+	               <a href="#">Log out</a>
+	            </div>
+            </div>
 		</div>
     </header>
     
@@ -31,11 +37,12 @@
 			<div class="profile">
             	<img id="profile_img" src="../images/profile_img.jpg" alt="Profile picture">
 				<div id="profile_details">
-					<p>Stephanie Austria</p>
-					<p>103465</p>
-					<p>saustria@sapient.com</p>
-					<p>Manager - Program Management</p>
-					<p>Seat #99, Virgo Block <br>BCBP Bangalore </p>
+					<p id="profile_name">Stephanie Austria</p>
+					<p class="profile_detail">103465</p>
+					<p class="profile_detail">saustria@sapient.com</p>
+					<p class="profile_detail">Manager - Program Management</p>
+					<p class="profile_detail">Seat #99, Virgo Block <br>BCBP Bangalore </p>
+					<br>
 				</div>
 			</div>	
 		</div>
@@ -46,15 +53,8 @@
 	                <input type="search" placeholder="Search" id="search_bar">
 	            </form>
 			</div>
-			<div><p id="list_heading">Your Supervisees</p></div>
+			<div id="heading_container"><p id="list_heading">Your Supervisees</p></div>
 	        <div class="supervisee_list scroll" id="super_list">
-				<div class="supervisee_details">
-					<div class="user_details">1</div>
-					<div class="emp_id user_details">2</div>
-					<div class="emp_name user_details">3</div>
-					<div class="role user_details">4</div>
-					<div class="action user_details">5</div>
-				</div>
 	        </div>
 	    </div>
 

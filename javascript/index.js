@@ -1,7 +1,9 @@
 //For Local Storage
+(function(){
+   
 function on_load()  //to display the remembered username when the page loads.
 {
-
+    console.log("entering onload");
 input=document.getElementsByTagName('input');
 username=input[0].value;
 var input;
@@ -18,27 +20,26 @@ console.log(username);
                
               }
           }
+     
 }
         function remember_me()  //the remember me functionality (storing in localStorage)
 {
-  var checkbox=document.getElementById('customcheckbox');
-        checkbox.addEventListener('change',function()
-        {
-       if(checkbox.checked==true)
-       {
+  console.log("entering remember_me");
+ 
              input=document.getElementsByTagName('input');
               username=input[0].value;
               localStorage.setItem("username",username);
               console.log(localStorage.username);
        }
-       else
+       /*else
        {
         localStorage.removeItem('username');
        }
       
-        })
-    }
-function validate(){               //checking the credentials if they are valid or not.
+        }
+    }*/
+function validate(){    
+ console.log("entering validate");           //checking the credentials if they are valid or not.
 var found = 0;
 var passmatch = 0;
 
@@ -64,7 +65,12 @@ xmlhttp.onreadystatechange = function() {
             found=1;
             if(password.value==myObj[i].password)
             {
+              console.log('pass matxched');
+              var checkbox=document.getElementById('customcheckbox');
+              if(checkbox.checked==true){
                     remember_me();
+                    console.log(checkbox.checked);
+                  }
               passmatch=1;
               window.location.href="../HTML/home.html";
               break;
@@ -94,4 +100,6 @@ xmlhttp.send();
 
 }
 on_load();
+var login_image=document.getElementById('login_image');
 login_image.addEventListener('click',validate);
+})();

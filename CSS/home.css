@@ -81,11 +81,15 @@ section {
 #list_heading {
     text-align: left;
 }
-.skill-item-Even {
+.supervisee_even {
     background-color: #3d3d3d;
 }
-.skill-item-Odd {
+.supervisee_odd {
     background-color: #424242;
+}
+.supervisee_title{
+    background-color: #2C2C2C;
+    height: 9%;
 }
 /* *{
 	border: 1px solid white;

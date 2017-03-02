@@ -3,7 +3,8 @@
 
         {
             "empid": "1234",
-            "name": "Rajat",
+            "name": "Vishal",
+            "email":"vishalkumar2304@gmail.com",
             "role": "Supervisor",
             "address": "Behind Biba and Bajaj Show Room, Closed to Sony signal & PVR Forum M",
             "supervisorid": "4657",

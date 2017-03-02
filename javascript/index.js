@@ -99,6 +99,6 @@ xmlhttp.send();
 
 }
 on_load();
-var login_image=document.getElementById('login_image');
-login_image.addEventListener('click',validate);
+var login_button=document.getElementById('login_button');
+login_button.addEventListener('click',validate);
 })();

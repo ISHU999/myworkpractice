@@ -72,6 +72,7 @@ section {
     display: inline-flex;
     height: 12%;
     width: 100%;
+    justify-content: space-between;
 }
 .user_details {
     height: 100%;

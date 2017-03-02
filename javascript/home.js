@@ -8,45 +8,6 @@
         } else if (window.ActiveXObject) {
             xhr = new ActiveXObject("Microsoft.XMLHTTP");
         }
-<<<<<<< HEAD
-        function header_name()
-{
-    
-  let url="http://localhost:30/myworkpractice/database/supervisor.json";
-
-var xmlhttp = new XMLHttpRequest();
-
- xmlhttp.open("GET", url, true);
- xmlhttp.send(null);
-
-xmlhttp.onload= function() {
-    console.log(sessionStorage.userId);
-    if (this.readyState == 4 && this.status == 200) {
-    console.log(sessionStorage.userId);
-        let myObj = JSON.parse(this.responseText);
-       
-        for(let i=0;i<myObj.supervisor.length;i++)
-        
-        {
-            console.log(sessionStorage.userId);
-          if(sessionStorage.userId==myObj.supervisor[i].empid)
-          {
-            let username=myObj.supervisor[i].name;
-            let uname=document.getElementsByClassName('name')[0];
-            uname.innerHTML=username;
-              break;
-            }
-            
-
-          }
-
-}
-};
-}
-        /* Make Ajax Call */
-        function load() {
-            initRequest();
-=======
     }
     /* Make Ajax Call */
     function load() {
@@ -62,7 +23,6 @@ xmlhttp.onload= function() {
     /* Call Back fucntion */
     var supervisee_list = "";
     var response;
->>>>>>> 8a3fa258988d7ca5da14335d371020854a4dd713
 
     function processResponse() {
         var division = "";
@@ -115,8 +75,6 @@ xmlhttp.onload= function() {
         } else {
             document.getElementById("super_list").innerHTML = '<h4>No results found</h4>'
         }
-<<<<<<< HEAD
-        header_name();
            load();
             var search_bar = document.getElementById("search_bar");
             var searchField;
@@ -136,8 +94,6 @@ xmlhttp.onload= function() {
                 }
             });    
 
-=======
-    });
     search_bar.addEventListener("search", function() {
         render_division(response);
     });
@@ -167,5 +123,4 @@ xmlhttp.onload= function() {
         });
     }
     sessionStorage.empid = '127474';
->>>>>>> 8a3fa258988d7ca5da14335d371020854a4dd713
 })();

@@ -1,0 +1,18 @@
+#profile_img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 230px;
+}
+#profile_details {
+    color: white;
+    font-size: 1.1em;
+    margin-left: 5px;
+    text-align: left;
+}
+.profile {
+    /*border: 2px solid orange;*/
+    background-color: #d52425;
+    border-radius: 8px;
+    margin-left: 5px;
+    width: 230px;
+}

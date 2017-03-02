@@ -1,4 +1,4 @@
-input[type=text]
+#uid    /*styling for username field*/
 {
 	background-color: transparent;
 	background-image: url(../images/username.png);
@@ -11,7 +11,7 @@ input[type=text]
 	padding:0 0 3px 25px;
 	width:280px;
 }
-input[type=password]
+#psw  /*styling for password field*/
 {
 	background-color: transparent;
 	background-image: url(../images/password.png);
@@ -25,11 +25,15 @@ input[type=password]
 	width:280px;
 
 }
-input[type=checkbox]
+#uid:focus,#psw:focus
+{
+	outline: none;
+}	
+input[type=checkbox]   /*custom checkbox*/
 {
 	visibility: hidden;
 }
-#checkbox
+#checkbox       /*custom checkbox*/
 {
 	border: solid 1px #696969;	
 	height: 15px;
@@ -38,7 +42,7 @@ input[type=checkbox]
 	width: 15px;
 
 }
-div label
+div label       /*custom checkbox*/
 {	
 	border-radius: 100px;
 	cursor: pointer;
@@ -48,15 +52,11 @@ div label
 	top: 4px;
 	width: 8px;
 }
-#checkbox input[type=checkbox]:checked+ label
+#checkbox input[type=checkbox]:checked+ label  /*custom checkbox*/
 {
 	background-color: #FFF;
 }
-#login
-{
-	margin: 40px 0 30px 0;
-}
-#user
+/*#user
 {
 	margin: 0 0 20px 0;
 }
@@ -64,47 +64,52 @@ div label
 {
 	margin: 40px 0 20px 0;
 }
-input[type=text]:focus,input[type=password]
+#login
 {
-	outline: none;
-}		
-#login_image
+	margin: 40px 0 30px 0;
+}
+*/
+.login_fields /*alignment : login form fields*/
+{
+	margin: 25px 0 30px 0;
+}	
+#login_image  /*login button*/
 {
 	height: 50px;
     width: 300px;
 }
-div a,div span
+div a,div span  /*styling for Remember Me and Forgot Password*/
 {
    	color : #FFF ;
    	padding: 0 0 0 30px;
    	text-decoration: none;
 }
-.container
+.container /*the complete division containing two subdivisions 'topic' and 'login'*/
 {
 	display: flex;
 	margin:200px 0 0 0;
 	width:100%;
 }
 
-.topic
+.topic /*alignment : complete division for title and logo*/
 {
 	 color: rgba(255,255,255,1);
 	 margin: 0 100px 0 0;
 	 width: 49%;
 }
 
-.login
+.login  /*alignment : complete division for login form */
 {
 	margin:0 0 0 50px;
 	width: 40%;
 }
 
-#logo
+#logo /*'SAPIENT NITRO' logo above 'COMPETENCY MATRIX'*/
 {
 	max-height:25%;
 	max-width: 25%;
 }
-h1
+h1  /*styling for the 'COMPETENCY MATRIX'*/
 {
 	font-weight: normal;
 	font-family: 'Raleway', sans-serif;

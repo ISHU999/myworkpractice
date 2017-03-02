@@ -31,32 +31,28 @@
             render_division(response);           
         }
     }
-    function render_division(renderData) {
-        var containerData = '';
-        containerData += "<div class='supervisee_title'><div class='user_details'>" +
-            "image" + "</div><div class='user_details' id='empid'>" + "EMP ID" +
-            "</div><div class='user_details' id='empname'>" +
-            "EMP NAME" + "</div><div class='user_details' id='role'>" +
-            "ROLE" +
-            "</div><div class='user_details'>" + "ACTION" + "</div> </div>";
+    function render_division(renderData){
+            var containerData='';
+            containerData="<div class='supervisee_title'><div class='user_details'>" + "" + "</div><div class='user_details'>" + "EMP ID" + "</div><div class='user_details'>" + "EMP NAME" + "</div><div class='user_details'>" +"ROLE"+ "</div><div class='user_details'>" +"ACTION"+ "</div></div>"
+            for (let i = 0; i < renderData.length; i++) {
+                if (i % 2 == 0) {
+                    containerData += "<div class='supervisee_details supervisee_even'><div class='user_details'>" + "image" +
+                    "</div><div class='user_details'>" +renderData[i].empid +
+                    "</div><div class='user_details'>" + renderData[i].name +
+                    "</div><div class='user_details'>" + renderData[i].role +
+                    "</div><div class='user_details'><a href='javascript:void(0)'><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)' class='icon_delete'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
+                } else {
+                    containerData += "<div class='supervisee_details supervisee_odd'><div class='user_details'>" + "image" +
+                     "</div><div class='user_details'>" + renderData[i].empid + 
+                     "</div><div class='user_details'>" + renderData[i].name + 
+                     "</div><div class='user_details'>" + renderData[i].role + 
+                     "</div><div class='user_details'><a href='javascript:void(0)'><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
+                }
 
-        for (let i = 0; i < renderData.length; i++) {
-            if (i % 2 == 0) {
-                containerData += "<div class='supervisee_details supervisee_even'><div class='user_details'>" +
-                    "image" + "</div><div class='user_details'>" + renderData[i].empid +
-                    "</div><div class='user_details'>" +
-                    renderData[i].name + "</div><div class='user_details'>" +
-                    renderData[i].role +
-                    "</div><div class='user_details'><a href='#'>Edit</a> &nbsp <a href='#'>Delete</a></div> </div>";
-            } else {
-                containerData += "<div class='supervisee_details supervisee_odd'><div class='user_details'>" + "image" + "</div><div class='user_details'>" + renderData[i].empid +
-                    "</div><div class='user_details'>" +
-                    renderData[i].name + "</div><div class='user_details'>" +
-                    renderData[i].role +
-                    "</div><div class='user_details'><a href='#'>Edit</a> &nbsp <a href='#'>Delete</a></div> </div>";
             }
-
+            return containerData;
         }
+        
         document.getElementById("super_list").innerHTML = containerData;
         registerEvent();
     }

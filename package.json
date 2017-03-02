@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> bba31beb18b77b5daef2a5c977f659837bf2e4fc
 {
   "name": "competency-matrix",
   "version": "1.0.0",
@@ -8,10 +11,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "niki",
+
+
+  "author": "subbu",
+
   "license": "MIT",
   "dependencies": {
     "express": "^4.12.3",
     "path": "^0.11.14"
   }
+
 } 

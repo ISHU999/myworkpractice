@@ -3,4 +3,6 @@ var app = express();
 app.use("/", express.static(__dirname));
 app.listen(3001);
 console.log("listening application");
+
 console.log("Browesr Enter Localhost:3001"); 
+

@@ -3,7 +3,6 @@
    var	source2 = "../images/star_nonfilled.png";
 	var show =	document.getElementById('show');
 show.addEventListener('click', show_sublist);
-
 function show_sublist(){
 	console.log('called')
 	var sublist = document.getElementsByClassName('sub-list-group');

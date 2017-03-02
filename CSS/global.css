@@ -162,6 +162,8 @@ footer .pattern{
 .header-dropdown {
     position: relative;
     display: inline-block;
+    cursor: pointer;
+
 }
 
 .header-dropdown-content {
@@ -180,7 +182,7 @@ footer .pattern{
 }
 .header-dropdown:hover .header-dropdown-content {
     display: block;
-
+   
 }
 
 .header-dropdown-content a {

@@ -55,6 +55,7 @@ xmlhttp.onload = function() {
     if (this.readyState == 4 && this.status == 200) {
         
         myObj = JSON.parse(this.responseText);
+        console.log(myObj.supervisor.length);
        
         for(let i=0;i<myObj.supervisor.length;i++)
         
@@ -70,10 +71,12 @@ xmlhttp.onload = function() {
                     remember_me();
                     console.log(checkbox.checked);
               passmatch=1;
+              sessionStorage.setItem('userId',userid.value);
               window.location.href="../HTML/home.html";
+
               break;
             }
-            
+          }
 
           }
           
@@ -86,8 +89,6 @@ xmlhttp.onload = function() {
 
                 window.alert("username not found");
             }
-
-        }
           
         };
          

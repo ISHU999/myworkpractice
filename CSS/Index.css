@@ -45,7 +45,7 @@ input[type=checkbox]   /*custom checkbox*/
 div label       /*custom checkbox*/
 {	
 	/*border-radius: 100px;*/
-	cursor: pointer;
+	cursor: progress;
 	height: 8px;
 	left: 3.5px;
 	position: absolute;

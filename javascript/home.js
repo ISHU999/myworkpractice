@@ -44,11 +44,11 @@ var division="";
 			{
 				if(i%2==0)
 				{
-					division+="<div class='supervisee_details skill-item-Even'><div class='user_details'>"+"image"+"</div><div class='user_details'>"+text.supervisee[i].empid+"</div><div class='user_details'>"+text.supervisee[i].name+"</div><div class='user_details'>"+text.supervisee[i].role+"</div><div class='user_details'><a href='#'>Edit</a> &nbsp <a href='#'>Delete</a></div></div>";
+					division+="<div class='supervisee_details skill-item-Even'> <div class='user_details'>"+"image"+"</div><div class='user_details'>"+text.supervisee[i].empid+"</div><div class='user_details'>"+text.supervisee[i].name+"</div><div class='user_details'>"+text.supervisee[i].role+"</div><div class='user_details'><a href='#'>Edit</a> &nbsp <a href='#'>Delete</a></div></div>";
 				}
 				else
 				{
-					division+="<div class='supervisee_details skill-item-Odd'><div class='user_details'>"+"image"+"</div><div class='user_details'>"+text.supervisee[i].empid+"</div><div class='user_details'>"+text.supervisee[i].name+"</div><div class='user_details'>"+text.supervisee[i].role+"</div><div class='user_details'><a href='#'>Edit</a> &nbsp <a href='#'>Delete</a></div></div>";
+					division+="<div class='supervisee_details skill-item-Odd'> <div class='user_details'>"+"image"+"</div><div class='user_details'>"+text.supervisee[i].empid+"</div><div class='user_details'>"+text.supervisee[i].name+"</div><div class='user_details'>"+text.supervisee[i].role+"</div><div class='user_details'><a href='#'>Edit</a> &nbsp <a href='#'>Delete</a></div></div>";
 				}
 
 			}

@@ -53,18 +53,21 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     
     if (this.readyState == 4 && this.status == 200) {
+     
         
-        myObj = JSON.parse(this.responseText);
+         var myObj = JSON.parse(this.responseText);
        
         for(let i=0;i<myObj.length;i++)
         
         {
+          
           if(userid.value==myObj[i].empid)
           {
             found=1;
             if(password.value==myObj[i].password)
             {
-                    remember_me();
+              
+                    // remember_me();
               passmatch=1;
               window.location.href="../HTML/home.html";
               break;
@@ -94,4 +97,6 @@ xmlhttp.send();
 
 }
 on_load();
+var login_image= document.getElementById("login_image");
+
 login_image.addEventListener('click',validate);

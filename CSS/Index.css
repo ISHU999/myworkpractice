@@ -1,7 +1,7 @@
 #uname    /*styling for username field*/
 {
 	background-color: transparent;
-	background-image: url(images/username.png);
+	background-image: url(../images/username.png);
 	background-position: 2% 30%;
 	background-size: 10px 10px;
 	background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 #psw  /*styling for password field*/
 {
 	background-color: transparent;
-	background-image: url(images/password.png);
+	background-image: url(../images/password.png);
 	background-position: 2% 30%;
 	background-size: 10px 10px;
 	background-repeat: no-repeat;

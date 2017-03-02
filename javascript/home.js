@@ -106,6 +106,8 @@
 
         });
     }
+
+    
 function registerDeleteEvent(){
  var del = document.getElementsByClassName('icon_delete');
  for(var i=0;i<del.length;i++)

@@ -8,10 +8,7 @@
         } else if (window.ActiveXObject) {
             xhr = new ActiveXObject("Microsoft.XMLHTTP");
         }
-<<<<<<< HEAD
-=======
 
->>>>>>> 90c99d794f7a0a5a9fad0ebf0a36ad43985245f3
     }
     /* Make Ajax Call */
     function load() {

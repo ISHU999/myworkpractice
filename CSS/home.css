@@ -98,3 +98,6 @@ section {
 .scroll{
     height: 90%;
 }
+.icon_edit, .icon_delete{
+    color: white;
+}

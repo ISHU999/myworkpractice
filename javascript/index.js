@@ -46,7 +46,7 @@ var userid = document.getElementById("uid");
 
 var password = document.getElementById("psw");
 
-let url="http://localhost:30/myworkpractice1/database/supervisor.json";
+let url="http://localhost:30/myworkpractice/database/supervisor.json";
 
 var xmlhttp = new XMLHttpRequest();
 

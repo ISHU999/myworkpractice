@@ -37,16 +37,16 @@
             for (let i = 0; i < renderData.length; i++) {
                 if (i % 2 == 0) {
                     containerData += "<div class='supervisee_details supervisee_even'><div class='user_details'>" + "image" +
-                    "</div><div class='user_details'>" +renderData[i].empid +
+                    "</div><div class='user_details'>" + renderData[i].empid +
                     "</div><div class='user_details'>" + renderData[i].name +
                     "</div><div class='user_details'>" + renderData[i].role +
-                    "</div><div class='user_details'><a href='javascript:void(0)'><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)' class='icon_delete'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
+                    "</div><div class='user_details'><a href='javascript:void(0)' class='icon_edit'><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)' class='icon_delete'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
                 } else {
                     containerData += "<div class='supervisee_details supervisee_odd'><div class='user_details'>" + "image" +
-                     "</div><div class='user_details'>" + renderData[i].empid + 
-                     "</div><div class='user_details'>" + renderData[i].name + 
-                     "</div><div class='user_details'>" + renderData[i].role + 
-                     "</div><div class='user_details'><a href='javascript:void(0)'><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
+                    "</div><div class='user_details'>" + renderData[i].empid + 
+                    "</div><div class='user_details'>" + renderData[i].name + 
+                    "</div><div class='user_details'>" + renderData[i].role + 
+                    "</div><div class='user_details'><a href='javascript:void(0)' class='icon_edit'><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)' class='icon_delete'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
                 }
 
             }

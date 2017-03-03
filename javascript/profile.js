@@ -11,7 +11,7 @@
         scroll[1].setAttribute('style', 'height:90%');
         console.log(json.length)
 
-        for (var i = 0; i < 1   ; i++) {
+        for (var i = 0; i < 1; i++) {
 
             //pskills
             var pskill = json[i].primaryskill;
@@ -34,49 +34,39 @@
 
 
     function populate_skills(skill, skill_list) {
-        var list = document.createElement('li');
-        for (var j = 0; j < skill.length; j++) {
 
+        for (var j = 0; j < skill.length; j++) {
+            var mainlist = document.createElement('li');
             var pskillname = skill[j].name;
-            list.innerHTML += '<div class="list-element"><span class="down-arrow">&#9660;</span><div class="skill-item">' + pskillname + '</div><div class="skill-level">Beginner</div></div>';
+            var container = '';
+            container += '<div class="list-element"><span class="down-arrow">&#9660;</span><div class="skill-item">' + pskillname + '</div><div class="skill-level">Beginner</div></div>';
             //subskills
             var subskill = skill[j].subskills;
+            console.log(mainlist)
+
+            container += '<div class="sub-list-group">';
 
             for (var k = 0; k < subskill.length; k++) {
 
                 var subname = subskill[k].name;
                 var sublevel = subskill[k].level;
 
-                list.innerHTML += '<div class="sub-list-group">' +
+                container +=
                     '<div class="sub-list-element">' +
                     '<div class="checkbox"><input type="checkbox" name="remember me" value="" aria-label="checkbox" id="customcheckbox"><label for="customcheckbox"></label></div>' +
                     '<div class="sub-skill-item">' + subname + '</div>' +
-
-                    '<div class="sub-skill-item">' +
                     '<img src="images/star_filled.png" alt="Stars" class="rating-star" />' +
                     '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
                     '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
                     '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
                     '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
-                    '</div>' +
-                    '</div>' +
-                    '<div class="sub-list-element">' +
-                    '<div class="checkbox"><input type="checkbox" name="remember me" value="" aria-label="checkbox" id="customcheckbox1"><label for="customcheckbox1"></label></div>' +
-                    '<div class="sub-skill-item">Session Storage</div>' +
-                    '<div class="sub-skill-item">' +
-                    '<img src="images/star_filled.png" alt="Stars" class="rating-star" />' +
-                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
-                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
-                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
-                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
-                    '</div>' +
-                    '</div>' +
                     '</div>'
-
             }
-
+            container += '</div>';
+            console.log(container)
+            mainlist.innerHTML = container;
+            skill_list.appendChild(mainlist);
         }
-        skill_list.appendChild(list);
     }
 
     // Function for stars
@@ -150,26 +140,27 @@
 
 
     //Display dropdown on click
-    var previous=null;
+    var previous = null;
+
     function show_sublist() {
-    
-        if(previous ){
+
+        if (previous) {
             previous.setAttribute('style', 'display:none')
-            previous.previousSibling.childNodes[0].innerHTML='&#9660;';
+            previous.previousSibling.childNodes[0].innerHTML = '&#9660;';
             console.log(previous)
             console.log(previous.previousSibling)
             console.log(event.currentTarget)
             console.log(previous.nextSibling)
-           
+
         }
-            if(previous!=event.currentTarget.nextSibling){
-                previous=event.currentTarget.nextSibling; 
-                event.currentTarget.childNodes[0].innerHTML='&#x25B2;';       
-                previous.setAttribute('style', 'display:block')
-            }else{
-               previous=null; 
-            }
-        
+        if (previous != event.currentTarget.nextSibling) {
+            previous = event.currentTarget.nextSibling;
+            event.currentTarget.childNodes[0].innerHTML = '&#x25B2;';
+            previous.setAttribute('style', 'display:block')
+        } else {
+            previous = null;
         }
+
+    }
 
 })();

@@ -1,21 +1,6 @@
-
-
 (function() {
 
-    var source1 = "../images/star_filled.png";
-    var source2 = "../images/star_nonfilled.png";
-    var show = document.getElementById('show');
-    show.addEventListener('click', show_sublist);
 
-    //Display dropdown on click
-    function show_sublist() {
-
-        var sublist = document.getElementsByClassName('sub-list-group');
-        console.log(sublist.length);
-
-        sublist[1].setAttribute('style', 'display:block');
-
-    }
 
 
     // Dynamically populate data
@@ -23,10 +8,10 @@
     function populate(json) {
         var scroll = document.getElementsByClassName('scroll');
         scroll[0].setAttribute('style', 'height:90%');
-         scroll[1].setAttribute('style', 'height:90%');
+        scroll[1].setAttribute('style', 'height:90%');
         console.log(json.length)
 
-        for (var i = 0; i < json.length; i++) {
+        for (var i = 0; i < 1   ; i++) {
 
             //pskills
             var pskill = json[i].primaryskill;
@@ -35,11 +20,11 @@
             var primarylist = document.getElementById('primary-list');
             var secondarylist = document.getElementById('secondary-list');
 
-            
-            populate_skills(pskill,primarylist);
-            populate_skills(sskill,secondarylist);
-    
-         
+
+            populate_skills(pskill, primarylist);
+            populate_skills(sskill, secondarylist);
+
+
 
 
 
@@ -48,50 +33,50 @@
     }
 
 
-    function populate_skills(skill,skill_list){
-      var list = document.createElement('li');
+    function populate_skills(skill, skill_list) {
+        var list = document.createElement('li');
         for (var j = 0; j < skill.length; j++) {
 
-                var pskillname = skill[j].name;
-                list.innerHTML+='<div class="list-element"><span class="down-arrow">&#9660;</span><div class="skill-item">'+pskillname+'</div><div class="skill-level">Beginner</div></div>';
-                //subskills
-                var subskill = skill[j].subskills;
+            var pskillname = skill[j].name;
+            list.innerHTML += '<div class="list-element"><span class="down-arrow">&#9660;</span><div class="skill-item">' + pskillname + '</div><div class="skill-level">Beginner</div></div>';
+            //subskills
+            var subskill = skill[j].subskills;
 
-                for (var k = 0; k < subskill.length; k++) {
+            for (var k = 0; k < subskill.length; k++) {
 
-                    var subname = subskill[k].name;
-                    var sublevel = subskill[k].level;
+                var subname = subskill[k].name;
+                var sublevel = subskill[k].level;
 
-                    list.innerHTML+='<div class="sub-list-group">'+
-                  '<div class="sub-list-element">'+
-                    '<div class="checkbox"><input type="checkbox" name="remember me" value="" aria-label="checkbox" id="customcheckbox"><label for="customcheckbox"></label></div>'+
-                    '<div class="sub-skill-item">'+subname+'</div>'+
+                list.innerHTML += '<div class="sub-list-group">' +
+                    '<div class="sub-list-element">' +
+                    '<div class="checkbox"><input type="checkbox" name="remember me" value="" aria-label="checkbox" id="customcheckbox"><label for="customcheckbox"></label></div>' +
+                    '<div class="sub-skill-item">' + subname + '</div>' +
 
-                    '<div class="sub-skill-item">'+
-                      '<img src="../images/star_filled.png" alt="Stars" class="rating-star" />'+
-                      '<img src="../images/star_nonfilled.png" alt="Stars" class="rating-star" />'+
-                      '<img src="../images/star_nonfilled.png" alt="Stars" class="rating-star" />'+
-                      '<img src="../images/star_nonfilled.png" alt="Stars" class="rating-star" />'+
-                      '<img src="../images/star_nonfilled.png" alt="Stars" class="rating-star" />'+
-                    '</div>'+
-                  '</div>'+
-                  '<div class="sub-list-element">'+
-                    '<div class="checkbox"><input type="checkbox" name="remember me" value="" aria-label="checkbox" id="customcheckbox1"><label for="customcheckbox1"></label></div>'+
-                    '<div class="sub-skill-item">Session Storage</div>'+
-                    '<div class="sub-skill-item">'+
-                      '<img src="../images/star_filled.png" alt="Stars" class="rating-star" />'+
-                      '<img src="../images/star_nonfilled.png" alt="Stars" class="rating-star" />'+
-                      '<img src="../images/star_nonfilled.png" alt="Stars" class="rating-star" />'+
-                      '<img src="../images/star_nonfilled.png" alt="Stars" class="rating-star" />'+
-                      '<img src="../images/star_nonfilled.png" alt="Stars" class="rating-star" />'+
-                    '</div>'+
-                  '</div>'+
-                '</div>'
-
-                }
+                    '<div class="sub-skill-item">' +
+                    '<img src="images/star_filled.png" alt="Stars" class="rating-star" />' +
+                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
+                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
+                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
+                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="sub-list-element">' +
+                    '<div class="checkbox"><input type="checkbox" name="remember me" value="" aria-label="checkbox" id="customcheckbox1"><label for="customcheckbox1"></label></div>' +
+                    '<div class="sub-skill-item">Session Storage</div>' +
+                    '<div class="sub-skill-item">' +
+                    '<img src="images/star_filled.png" alt="Stars" class="rating-star" />' +
+                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
+                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
+                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
+                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>'
 
             }
-             skill_list.appendChild(list);
+
+        }
+        skill_list.appendChild(list);
     }
 
     // Function for stars
@@ -134,7 +119,7 @@
 
     function load() {
         initRequest();
-        let url = "http://localhost:3000/competancy";
+        let url = "http://localhost:3000/supervisee";
         xhr.open("GET", url, true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.onreadystatechange = processResponse;
@@ -147,10 +132,44 @@
             var json = JSON.parse(xhr.responseText);
 
             populate(json);
+
+
+            var show = document.getElementsByClassName('list-element');
+            console.log(show.length)
+            for (var i = 0; i < show.length; i++)
+                show[i].addEventListener('click', show_sublist);
+
         }
     }
 
     var l = document.getElementById('load');
     l.addEventListener('click', load);
+
+    var source1 = "images/star_filled.png";
+    var source2 = "images/star_nonfilled.png";
+
+
+    //Display dropdown on click
+    var previous=null;
+    function show_sublist() {
+    
+        if(previous ){
+            previous.setAttribute('style', 'display:none')
+            previous.previousSibling.childNodes[0].innerHTML='&#9660;';
+            console.log(previous)
+            console.log(previous.previousSibling)
+            console.log(event.currentTarget)
+            console.log(previous.nextSibling)
+           
+        }
+            if(previous!=event.currentTarget.nextSibling){
+                previous=event.currentTarget.nextSibling; 
+                event.currentTarget.childNodes[0].innerHTML='&#x25B2;';       
+                previous.setAttribute('style', 'display:block')
+            }else{
+               previous=null; 
+            }
+        
+        }
 
 })();

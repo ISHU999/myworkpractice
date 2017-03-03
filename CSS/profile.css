@@ -3,7 +3,9 @@ section, .skills{
   justify-content: space-between;
   
 }
-
+.disable{
+	pointer-events: none;
+}
 section{
 	height: 500px;	
 	margin: auto;
@@ -190,8 +192,9 @@ input[type=radio]   /*custom checkbox*/
 
 .checkbox       /*custom checkbox*/
 {
-	border: solid 1px #696969;	
-	height: 50%;
+	padding-top: 1%;
+	border: solid 0.8px #696969;	
+	height: 40%;
 	position: relative;
 	width: 5%;
 

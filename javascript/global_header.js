@@ -35,8 +35,12 @@ xmlhttp.onreadystatechange= function() {
  let dropdowncontent=document.getElementById("dropdown-content");
  dropdown.addEventListener("click",function () {
    dropdowncontent.classList.toggle("show");
-   console.log('1');
  });
+   // window.addEventListener('click',function(){
+   //  dropdowncontent.classList.remove("show");
+   // });
+  
+ 
 
 
 

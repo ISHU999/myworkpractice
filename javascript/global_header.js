@@ -11,16 +11,13 @@ var xmlhttp = new XMLHttpRequest();
  xmlhttp.send(null);
 
 xmlhttp.onreadystatechange= function() {
-    console.log(sessionStorage.userID);
     if (this.readyState == 4 && this.status == 200) {
-    console.log(sessionStorage.userID);
         let myObj = JSON.parse(this.responseText);
        
         for(let i=0;i<myObj.length;i++)
         
         {
-            console.log(sessionStorage.userID);
-          if(sessionStorage.userID==myObj[i].empid)
+          if(sessionStorage.userID==myObj[i].id)
           {
             let username=myObj[i].name;
             let uname=document.getElementsByClassName('name')[0];
@@ -28,11 +25,24 @@ xmlhttp.onreadystatechange= function() {
               break;
             }
             
-
           }
 
 }
 };
 }
  header_name();
-})();
+ let dropdown=document.getElementById("dropdown");
+ let dropdowncontent=document.getElementById("dropdown-content");
+ dropdown.addEventListener("click",function () {
+   dropdowncontent.classList.toggle("show");
+   console.log('1');
+ });
+
+
+
+    
+  
+
+}
+
+)();

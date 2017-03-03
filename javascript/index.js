@@ -60,7 +60,7 @@ xmlhttp.onreadystatechange = function() {
         for(let i=0;i<myObj.length;i++)
         
         {
-          if(username.value==myObj[i].empid)
+          if(username.value==myObj[i].id)
           {
             found=1;
             if(password.value==myObj[i].password)

@@ -27,6 +27,8 @@
 		console.log(text[0].name);
 	}
 	}
+	var edit_profile_link=document.getElementById('edit_profile_link');
+	var supervisor_modal=document.getElementById('container_modal_supervisor');
 	var delete_modal_view=document.getElementById('container_modal');
 	var delete_yes=document.getElementById('modal_delete_btn');
 	var delete_no=document.getElementById('modal_delete_btn_deny');
@@ -42,12 +44,17 @@
 	delete_no.addEventListener('click',function(){
 			delete_modal_view.setAttribute("style","display:none");
 	})
-	supervisee_edit.addEventListener('click',function(){
-		console.log("working");
-		supervisee_modal_view.setAttribute('style', 'display:flex');
-	})
+	// supervisee_edit.addEventListener('click',function(){
+	// 	console.log("working");
+	// 	supervisee_modal_view.setAttribute('style', 'display:flex');
+	// })
 	supervisee_edit_save.addEventListener('click',function(){
 		console.log('display gone again');
 		supervisee_modal_view.setAttribute('style','display:none');
 	})
-})();
+	edit_profile_link.addEventListener('click',function(){
+		console.log('modal work');
+		supervisor_modal.setAttribute('style','display:flex');
+		console.log(supervisor_modal);
+	})
+	})();

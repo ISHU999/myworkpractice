@@ -1,17 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta http-equiv='content-type' content='text/html; charset=UTF-8' />
-	<title>Profile</title>
-	<link rel="stylesheet" href="css/global.css">
-	<link rel="stylesheet" href="css/profile.css">
-	<link rel="stylesheet" href="css/profile_wall.css">
-	<link rel="icon" href="images/favicon.png">	
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='content-type' content='text/html; charset=UTF-8' />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/profile_wall.css">
+    <link rel="icon" href="images/favicon.png">
 </head>
+
 
 
 <body> 
@@ -25,12 +25,13 @@
 		</div>
 		<div class="name_pic">
 			<span class="name">Stephanie Austria </span>
-			<div class="header-dropdown">
+			<div class="header-dropdown" id="dropdown">
 				<img src="images/stephanie.png" alt="Profile picture" class="profile_pic Round_corner "/>
-				<div class="header-dropdown-content">
-					<a href="#">Edit Profile</a>
-					<a href="#">Log out</a>
+				<div class="header-dropdown-content" id="dropdown-content">
 
+					   <a href="#"><img src="images/Stephanie.png">Profile</a>
+					   <a href="#"><img src="images/help.png">Help</a>
+					   <a href="#"><img src="images/logout.png" id="logout_image">Logout</a>
 				</div>
 			</div>
 		</div>
@@ -107,9 +108,10 @@
 
 	</footer>
 	<script src="javascript/profile.js" type="text/javascript" charset="utf-8" async defer></script>
-	<!-- <script type="text/javascript" src="javascript/global.js" charset="utf-8" async defer></script> -->
+	<script type="text/javascript" src="javascript/global_header.js" charset="utf-8" async defer></script> 
 
 					</footer>
 
 				</body>
 				</html>
+

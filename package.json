@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> bba31beb18b77b5daef2a5c977f659837bf2e4fc
 {
   "name": "competency-matrix",
   "version": "1.0.0",
@@ -9,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js and json-server --watch new_database.json"
   },
 
 

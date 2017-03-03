@@ -89,7 +89,12 @@
 
     function sorting(responseData, property) {
         responseData.sort(function(curr, next) {
-            return curr[property] > next[property];
+            if(curr[property] < next[property])
+            return -1;
+        else if(curr[property] > next[property])
+            return 1;
+        else
+            return 0;
         });
         if (responseData.length > 0) {
             render_division(responseData);
@@ -101,7 +106,7 @@
         var empname = document.getElementById('empname');
         var role = document.getElementById('role');
         empid.addEventListener("click", function() {
-            sorting(response, 'empid');
+            sorting(response, 'id');
         });
         empname.addEventListener("click", function() {
             sorting(response, 'name');

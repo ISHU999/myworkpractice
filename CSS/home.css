@@ -1,5 +1,10 @@
-
+/* Search bar Styling */
+.search_bar {
+    height: 5%;
+    text-align: left;
+}
 #search_bar {
+    /*background-size: 2%;*/
     border: none;
     box-sizing: border-box;
     border-bottom: 1px solid grey;
@@ -7,11 +12,10 @@
     outline-style: none;
     color: white;
     background-image: url("../images/search_button.png");
-    background-position: 1px 1px top left;
+    background-position: top left;
     padding: 5px 2px 7px 40px;
     background-repeat: no-repeat;
     background-size: contain;
-    /*background-size: 2%;*/
     width: 85%;
 }
 #search_bar:focus {
@@ -29,18 +33,8 @@ input:-ms-input-placeholder {
     color: rgb(102, 102, 102);
     font-size: 1.3em;
 }
-.supervisee_list {
-    height: 82%;
-    width: 80%;
-    /* border: 1px solid red; */
-}
-#delete_button {
-    height: 30px;
-    width: 30px;
-}
-/*div{
-	border: 1px solid white;
-}*/
+
+/* Main page and containers styling */
 section {
     color: white;
     display: flex;
@@ -57,36 +51,42 @@ section {
 }
 .list_container {
     /* border:1px solid blue; */
-    color: white;
+    display: flex;
+    flex-direction: column;
     height: 135%;
     width: 65%;
 }
-.search_bar {
-    height: 5%;
-    text-align: left;
-}
-.supervisee_details, .supervisee_title {
-    /* border: 1px solid green; */
-    /*border-radius: 10px;*/
-    color: white;
-    display: flex;
-    height: 12%;
-    width: 100%;
-    justify-content: space-between;
-}
-.user_details {
-    height: 100%;
-    text-align: center;
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#heading_container{
+
+/* List Container Styling */
+#heading_container {
     padding-left: 2%;
 }
 #list_heading {
     text-align: left;
+}
+.supervisee_list_header {
+    /*height: 100px;*/
+    width: 78.8%;
+ }
+.supervisee_list {
+    /* border: 1px solid red; */
+    /*border-radius: 10px;*/
+    height: 82%;
+    width: 80%;
+}
+.supervisee_details, .supervisee_title {
+    /* border: 1px solid green; */
+    color: white;
+    display: flex;
+    height: 12%;
+    justify-content: space-between;
+    width: 100%;
+}
+.supervisee_title {
+    background-color: #2C2C2C;
+    /*border-radius: 5px;*/
+    color: rgba(255, 255, 255, 0.4);
+    height: 45px;
 }
 .supervisee_even {
     background-color: #3d3d3d;
@@ -94,30 +94,37 @@ section {
 .supervisee_odd {
     background-color: #424242;
 }
-.supervisee_title{
-    background-color: #2C2C2C;
-    height: 9%;
-    color: rgba(255, 255, 255, 0.4);
+.user_details {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
 }
-.scroll{
-    height: 90%;
+.scroll {
+    height: 75%;
 }
-.icon_edit, .icon_delete{
-    color: white;
-    border: 1px solid grey;
+
+/* Edit Delete Icon Styling */
+.icon_edit, .icon_delete {
     border-radius: 100%;
+    border: 1px solid grey;
+    color: white;
     padding: 3px;
     width: 19px;
 }
-.icon_edit:hover{
+.icon_edit:hover, .icon_delete:hover {
     border: 1px solid white;
 }
-.icon_delete:hover{
-    border: 1px solid white;
-}
-.icon_edit .fa-pencil{
+.icon_edit .fa-pencil {
     font-size: 12px;
 }
-.icon_delete .fa-trash{
+.icon_delete .fa-trash {
     font-size: 13px;
 }
+
+/*div{
+    border: 1px solid white;
+}
+*/

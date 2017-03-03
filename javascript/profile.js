@@ -91,8 +91,8 @@
             var secondarylist = document.getElementById('secondary-list');
 
 
-            populate_skills(pskill, primarylist);
-            populate_skills(sskill, secondarylist);
+            populate_skills(pskill,0, primarylist);
+            populate_skills(sskill,1, secondarylist);
 
 
 
@@ -103,7 +103,7 @@
     }
 
 
-    function populate_skills(skill, skill_list) {
+    function populate_skills(skill,index, skill_list) {
        for (var j = 0; j < skill.length; j++) {
             var mainlist = document.createElement('li');
             var pskillname = skill[j].name;
@@ -119,7 +119,7 @@
 
                 var subname = subskill[k].name;
                 var sublevel = subskill[k].level;
-                var idchk = j+'0'+k;
+                var idchk = index+''+j+''+k;
 
                 container +=
                     '<div class="sub-list-element">' +
@@ -144,12 +144,7 @@
     }
 
 
-
-    
-
-
-
-    // ajaz call
+    // ajax call
 
     var xhr;
 
@@ -197,8 +192,7 @@
         }
     
 
-    var l = document.getElementById('load');
-    l.addEventListener('click', load);
+    window.onload=load;
 
 
 

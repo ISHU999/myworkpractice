@@ -72,7 +72,7 @@ xmlhttp.onreadystatechange = function() {
                     console.log(checkbox.checked);
               passmatch=1;
               sessionStorage.setItem('userID',username.value);
-              window.location.href="../home.html";
+              window.location.href="home.html";
 
               break;
             }

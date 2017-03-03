@@ -1,14 +1,13 @@
 (function() {
 
-    var send = document.getElementById("send_password");
-    var mail;
+    var send = document.getElementById("send_password"); //Getting the send password button
     var xhr;
 
-    function initRequest() {
+    function initRequest() { //Making connection different browser compatible
         if (window.XMLHttpRequest) {
-            xhr = new XMLHttpRequest();
+            xhr = new XMLHttpRequest(); //for chrome
         } else if (window.ActiveXObject) {
-            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            xhr = new ActiveXObject("Microsoft.XMLHTTP"); //for IE
         }
         console.log(xhr);
     }
@@ -16,56 +15,48 @@
 
     function load() {
         initRequest();
-        let url = "http://localhost:3000/supervisor";
+        var url = "http://localhost:3000/supervisor"; //Connecting to the JSON server
         xhr.open("GET", url, true);
         xhr.onreadystatechange = processRequest;
         xhr.send(null);
     }
 
     function processRequest() {
-        let username1 = document.getElementById("username").value;
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            let response = xhr.responseText;
-            var data = JSON.parse(response);
-            console.log(username1 + " from prqst");
-
-            var hasMatch = false;
+        var userid = document.getElementById("username").value; //Getting the username entered by the user
+        if (xhr.readyState == 4 && xhr.status == 200) { //Checking if the connection is open or not
+            var response = xhr.responseText; //Getting String data from db
+            var data = JSON.parse(response); //Converting string data to JSON data
+            var mail;
+            var hasMatch = false; //Flag to see if the username exists or not
 
             for (var index = 0; index < data.length; ++index) {
 
                 var user = data[index];
 
-                if (user.empid == username1) {
+                if (user.id == userid) {
                     hasMatch = true;
-                    mail = user.email;
+                    mail = user.email; //Getting the emailID of the user
                     console.log(mail);
                     break;
                 }
             }
             console.log(hasMatch);
-            document.getElementById("username").value = "";
+            document.getElementById("username").value = ""; //Clearing the username field
             if (hasMatch) {
 
-                var text = "";
-                var len = 6;
-                var charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-                for (var i = 0; i < len; i++) {
-                    text += charset.charAt(Math.floor((Math.random() * charset.length)));
+                var new_password = ""; //Declaring a new password
+                var length = 6; //Declaring the length of the password
+                var charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"; //Declaring the character set used to generate the new password
+                for (var i = 0; i < length; i++) {
+                    new_password += charset.charAt(Math.floor((Math.random() * charset.length))); //Randomly generating a new password using the defined character set
                 }
-                console.log("Random password :" + text);
+                
 
-                var pass = user.password;
-                response = response.replace(pass, text);
-                console.log("Paswword has not been changed on the server though!");
-                // let url="http://localhost:3000/supervisor";
-                // xhr.open("PUT",url,true);
-                // xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-                // xhr.send(response);
-
-
-
-                //emailjs.send("gmail","password",{"email":mail, "name":user.name, "message":"<b>"+text+"</b>"});
-                redirect();
+                // var password = user.password;
+                // response = response.replace(password, new_password);
+                // console.log("Paswword has not been changed on the server though!");
+                emailjs.send("gmail","password",{"email":mail, "name":user.name, "message":"<b>"+new_password+"</b>"}); //Sending the new password through emailJS to the specified emailID
+                redirect(); 
                 alert("Password sent to your registered eMail address successfully!");
 
             } else {
@@ -74,24 +65,24 @@
         }
     }
 
-    function redirect() {
-        var timecount = 5;
-        var text = document.getElementById("recovery");
-        text.innerHTML = "You will be redirected to login page in " + timecount + " seconds";
-        text.setAttribute("style", "color: #fff");
-        setInterval(function() {
+    function redirect() { //To redirect the user to the login page once the password has been sent
+        var timecount = 5; //Setting 5 seconds timer for redirecting
+        var message = document.getElementById("recovery"); //Changing the recovery division to a display message
+        message.innerHTML = "You will be redirected to login page in " + timecount + " seconds"; //Changing the recovery division to a display message
+        message.setAttribute("style", "color: #fff");
+        setInterval(function() { //Changing the recovery division to a display message
             timecount--;
-            text.innerHTML = "You will be redirected to login page in " + timecount + " seconds";
-            text.setAttribute("style", "color: #fff");
+            message.innerHTML = "You will be redirected to login page in " + timecount + " seconds";
+            message.setAttribute("style", "color: #fff");
             if (timecount == 1) {
-                window.location = 'index.html';
+                window.location = 'index.html'; //Counting
             }
         }, 1000);
     }
 
-    function valid(username) {
+    function valid(userid) { //To check if the username field is not left null
 
-        if (username == "") {
+        if (userid == "") {
 
             console.log("Null value");
             document.getElementById("username").focus();
@@ -109,11 +100,11 @@
     send.addEventListener('click', function() {
 
 
-        var username = document.getElementById("username").value;
-        if (valid(username)) {
+        var userid = document.getElementById("username").value; //Getting the username entered by the user
+        if (valid(userid)) {
 
 
-            console.log(username);
+            console.log(userid);
 
             load();
 

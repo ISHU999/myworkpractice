@@ -1,5 +1,75 @@
 (function() {
 
+  var source1 = "images/star_filled.png";
+    var source2 = "images/star_nonfilled.png";
+    var list_items = [];
+     var subskillObj = {
+            "name": "",
+            "level": "1"
+        };
+        var subskills = [];
+         function rating(sublist) {
+        var sublist_items = sublist.nextElementSibling;
+        console.log(sublist_items.childNodes);
+      for(var x =0; x<sublist_items.childNodes.length ; x++){
+            var it = sublist_items.childNodes[x].childNodes;
+            console.log(it);
+            console.log(it[0].childNodes[0]);
+            it[0].childNodes[0].addEventListener('change', function(event) {
+                if (this.checked) {
+                    console.log('hi')
+                    var node = this.parentNode.nextElementSibling;
+                    console.log(node);
+                    list_items = [];
+                    subskillObj.name = "";
+                   // .level = ;
+                    subskills.push(subskillObj);
+                    console.log(node.nextElementSibling);
+                    list_items.push(node.nextElementSibling);
+
+                    my_list = list_items[0].childNodes;
+                    console.log(my_list.length);
+                    for (var i = 0; i < my_list.length; i ++) {
+                        my_list[i].addEventListener('click', setRating);
+                        my_list[i].myParam = i;
+                         console.log(i);
+                        //
+                    }
+                } else {
+                    console.log("im outside");
+                    console.log(my_list);
+                    for (var i = 0; i < my_list.length; i ++) {
+                        my_list[i].removeEventListener('click', setRating);
+
+                    }
+
+                }
+            });
+        }
+    }
+
+    function setRating(event) {
+        var i = event.target.myParam;
+        total = i;
+        var len = my_list.length;
+        console.log('hello');
+        if (my_list[i].getAttribute('src') == source2) {
+            for (var j = 0; j <= i; j ++) {
+                my_list[j].setAttribute('src', source1);
+            }
+
+        } else {
+            for (var k = i; k < len; k ++) {
+                total = my_list[i].getAttribute('data-value');
+            
+                my_list[k].setAttribute('src', source2);
+
+            }
+
+
+        }
+        console.log(total);
+    }
 
 
 
@@ -51,7 +121,6 @@
                     '<div class="sub-list-element">' +
                     '<div class="checkbox"><input type="checkbox" name="remember me" value="" aria-label="checkbox" id="customcheckbox"><label for="customcheckbox"></label></div>' +
                     '<div class="sub-skill-item">' + subname + '</div>' +
-
                     '<div class="sub-skill-item">' +
                     '<img src="images/star_filled.png" alt="Stars" class="rating-star" />' +
                     '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
@@ -79,28 +148,9 @@
         skill_list.appendChild(list);
     }
 
-    // Function for stars
-    function rating() {
 
-        var sub_items = document.getElementsByClassName('rating-star');
 
-        for (var i = 1; i < sub_items.length; i++) {
-            setRating(sub_items[i]);
-        }
-    }
-
-    function setRating(items) {
-
-        items.addEventListener('click', function() {
-
-            if (items.getAttribute('src') == source1) {
-                items.setAttribute('src', source2);
-            } else {
-                items.setAttribute('src', source1);
-            }
-        });
-    }
-    rating();
+    
 
 
 
@@ -135,18 +185,24 @@
 
 
             var show = document.getElementsByClassName('list-element');
-            console.log(show.length)
-            for (var i = 0; i < show.length; i++)
+            // console.log(show.length);
+            //  console.log(show);
+          
+            for (var i = 0; i < show.length; i++){
                 show[i].addEventListener('click', show_sublist);
+                rating(show[i]);
+
+                 
+            }
+            
+        }
 
         }
-    }
+    
 
     var l = document.getElementById('load');
     l.addEventListener('click', load);
 
-    var source1 = "images/star_filled.png";
-    var source2 = "images/star_nonfilled.png";
 
 
     //Display dropdown on click
@@ -156,10 +212,10 @@
         if(previous ){
             previous.setAttribute('style', 'display:none')
             previous.previousSibling.childNodes[0].innerHTML='&#9660;';
-            console.log(previous)
-            console.log(previous.previousSibling)
-            console.log(event.currentTarget)
-            console.log(previous.nextSibling)
+            // console.log(previous)
+            // console.log(previous.previousSibling)
+            // console.log(event.currentTarget)
+            // console.log(previous.nextSibling)
            
         }
             if(previous!=event.currentTarget.nextSibling){
@@ -169,6 +225,7 @@
             }else{
                previous=null; 
             }
+
         
         }
 

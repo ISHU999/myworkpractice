@@ -68,9 +68,6 @@ button,#submit_image{
   text-align: center;
   z-index: 122;
  }
- #container_modal{
- 	display: none;
- }
 .input_text{
  	border-radius: 10px;
  	width: 80%;

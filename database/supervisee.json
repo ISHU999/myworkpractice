@@ -559,6 +559,481 @@
 					]
 				}
 			]
+},
+
+{
+	"empid":"4563",
+	"name":"Akansha",
+	"role":"Associate",
+    "image": "" ,
+    "email": "" ,
+	"address":"BEHIND INNOVATIVE MULTIPLEX,10TH MAIN TULASI THEATRE ROAD",
+	"supervisorid":"1234",
+
+    	"primaryskill":[
+				{
+					"name":"html",
+					"subskills":[
+						{
+							"name":"localssdsdsdtorage",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES6",
+							"level":"1"
+						},
+						{
+							"name":"Ajax",
+							"level":"1"
+						}
+					]
+				}
+			],
+
+
+			"secondaryskill":[
+				{
+					"name":"htmlsdsd",
+					"subskills":[
+						{
+							"name":"localstorage1",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel1",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES61",
+							"level":"1"
+						},
+						{
+							"name":"Ajax1",
+							"level":"1"
+						}
+					]
+				}
+			]
+},
+
+{
+	"empid":"4563",
+	"name":"Akansha",
+	"role":"Associate",
+    "image": "" ,
+    "email": "" ,
+	"address":"BEHIND INNOVATIVE MULTIPLEX,10TH MAIN TULASI THEATRE ROAD",
+	"supervisorid":"1234",
+
+    	"primaryskill":[
+				{
+					"name":"html",
+					"subskills":[
+						{
+							"name":"localssdsdsdtorage",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES6",
+							"level":"1"
+						},
+						{
+							"name":"Ajax",
+							"level":"1"
+						}
+					]
+				}
+			],
+
+
+			"secondaryskill":[
+				{
+					"name":"htmlsdsd",
+					"subskills":[
+						{
+							"name":"localstorage1",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel1",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES61",
+							"level":"1"
+						},
+						{
+							"name":"Ajax1",
+							"level":"1"
+						}
+					]
+				}
+			]
+},
+
+{
+	"empid":"4563",
+	"name":"Akansha",
+	"role":"Associate",
+    "image": "" ,
+    "email": "" ,
+	"address":"BEHIND INNOVATIVE MULTIPLEX,10TH MAIN TULASI THEATRE ROAD",
+	"supervisorid":"1234",
+
+    	"primaryskill":[
+				{
+					"name":"html",
+					"subskills":[
+						{
+							"name":"localssdsdsdtorage",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES6",
+							"level":"1"
+						},
+						{
+							"name":"Ajax",
+							"level":"1"
+						}
+					]
+				}
+			],
+
+
+			"secondaryskill":[
+				{
+					"name":"htmlsdsd",
+					"subskills":[
+						{
+							"name":"localstorage1",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel1",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES61",
+							"level":"1"
+						},
+						{
+							"name":"Ajax1",
+							"level":"1"
+						}
+					]
+				}
+			]
+},
+
+{
+	"empid":"4563",
+	"name":"Akansha",
+	"role":"Associate",
+    "image": "" ,
+    "email": "" ,
+	"address":"BEHIND INNOVATIVE MULTIPLEX,10TH MAIN TULASI THEATRE ROAD",
+	"supervisorid":"1234",
+
+    	"primaryskill":[
+				{
+					"name":"html",
+					"subskills":[
+						{
+							"name":"localssdsdsdtorage",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES6",
+							"level":"1"
+						},
+						{
+							"name":"Ajax",
+							"level":"1"
+						}
+					]
+				}
+			],
+
+
+			"secondaryskill":[
+				{
+					"name":"htmlsdsd",
+					"subskills":[
+						{
+							"name":"localstorage1",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel1",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES61",
+							"level":"1"
+						},
+						{
+							"name":"Ajax1",
+							"level":"1"
+						}
+					]
+				}
+			]
+},
+
+{
+	"empid":"4563",
+	"name":"Akansha",
+	"role":"Associate",
+    "image": "" ,
+    "email": "" ,
+	"address":"BEHIND INNOVATIVE MULTIPLEX,10TH MAIN TULASI THEATRE ROAD",
+	"supervisorid":"1234",
+
+    	"primaryskill":[
+				{
+					"name":"html",
+					"subskills":[
+						{
+							"name":"localssdsdsdtorage",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES6",
+							"level":"1"
+						},
+						{
+							"name":"Ajax",
+							"level":"1"
+						}
+					]
+				}
+			],
+
+
+			"secondaryskill":[
+				{
+					"name":"htmlsdsd",
+					"subskills":[
+						{
+							"name":"localstorage1",
+							"level":"1"
+						},
+						{
+							"name":"sessionstorage1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"css",
+					"subskills":[
+						{
+							"name":"flexmodel1",
+							"level":"1"
+						},
+						{
+							"name":"boxmodel1",
+							"level":"1"
+						}
+					]
+				},
+				{
+					"name":"javascript",
+					"subskills":[
+						{
+							"name":"ES61",
+							"level":"1"
+						},
+						{
+							"name":"Ajax1",
+							"level":"1"
+						}
+					]
+				}
+			]
 }
 
 

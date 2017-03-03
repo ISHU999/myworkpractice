@@ -40,7 +40,7 @@ section {
     display: flex;
     height: 500px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .profile_container, .list_container {
     flex-grow: 1;

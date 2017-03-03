@@ -10,10 +10,10 @@
         var subskills = [];
          function rating(sublist) {
         var sublist_items = sublist.nextElementSibling;
-        console.log(sublist_items.childNodes);
+      //  console.log(sublist_items.childNodes);
       for(var x =0; x<sublist_items.childNodes.length ; x++){
             var it = sublist_items.childNodes[x].childNodes;
-            console.log(it);
+           // console.log(it);
             console.log(it[0].childNodes[0]);
             it[0].childNodes[0].addEventListener('change', function(event) {
                 if (this.checked) {
@@ -104,48 +104,42 @@
 
 
     function populate_skills(skill, skill_list) {
-        var list = document.createElement('li');
-        for (var j = 0; j < skill.length; j++) {
-
+       for (var j = 0; j < skill.length; j++) {
+            var mainlist = document.createElement('li');
             var pskillname = skill[j].name;
-            list.innerHTML += '<div class="list-element"><span class="down-arrow">&#9660;</span><div class="skill-item">' + pskillname + '</div><div class="skill-level">Beginner</div></div>';
+            var container = '';
+            container += '<div class="list-element"><span class="down-arrow">&#9660;</span><div class="skill-item">' + pskillname + '</div><div class="skill-level">Beginner</div></div>';
             //subskills
             var subskill = skill[j].subskills;
+          //  console.log(mainlist)
+
+            container += '<div class="sub-list-group">';
 
             for (var k = 0; k < subskill.length; k++) {
 
                 var subname = subskill[k].name;
                 var sublevel = subskill[k].level;
-
-                list.innerHTML += '<div class="sub-list-group">' +
+                console.log('i='+k)
+                var idchk = j+'0'+k;
+                container +=
                     '<div class="sub-list-element">' +
-                    '<div class="checkbox"><input type="checkbox" name="remember me" value="" aria-label="checkbox" id="customcheckbox"><label for="customcheckbox"></label></div>' +
+                    
+                    '<div class="checkbox"><input type="radio" name="rememberme" value="" aria-label="checkbox" id="customcheckbox'+idchk+'"><label for="customcheckbox'+idchk+'"></label></div>' +
                     '<div class="sub-skill-item">' + subname + '</div>' +
-                    '<div class="sub-skill-item">' +
-                    '<img src="images/star_filled.png" alt="Stars" class="rating-star" />' +
-                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
-                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
-                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
-                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
-                    '</div>' +
-                    '</div>' +
-                    '<div class="sub-list-element">' +
-                    '<div class="checkbox"><input type="checkbox" name="remember me" value="" aria-label="checkbox" id="customcheckbox1"><label for="customcheckbox1"></label></div>' +
-                    '<div class="sub-skill-item">Session Storage</div>' +
-                    '<div class="sub-skill-item">' +
-                    '<img src="images/star_filled.png" alt="Stars" class="rating-star" />' +
-                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
-                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
-                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
-                    '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
-                    '</div>' +
-                    '</div>' +
+                      // '<div style="display:flex">'+
+                            '<img src="images/star_filled.png" alt="Stars" class="rating-star" />' +
+                            '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
+                            '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
+                            '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
+                            '<img src="images/star_nonfilled.png" alt="Stars" class="rating-star" />' +
+                       // '</div>'
                     '</div>'
-
             }
-
+            container += '</div>';
+            //console.log(container)
+            mainlist.innerHTML = container;
+            skill_list.appendChild(mainlist);
         }
-        skill_list.appendChild(list);
     }
 
 

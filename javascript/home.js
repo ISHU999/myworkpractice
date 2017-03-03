@@ -33,12 +33,15 @@
     }
 
     function render_division(renderData) {
-        var containerData = '';
-        containerData = "<div class='supervisee_title'><div class='user_details'>" +
+        var containerData1 = '';
+        containerData1 = "<div class='supervisee_title'><div class='user_details'>" +
             "" + "</div><div class='user_details' id='empid'>" +
             "EMP ID" + "</div><div class='user_details' id='empname'>" +
             "EMP NAME" + "</div><div class='user_details' id='role'>" +
             "ROLE" + "</div><div class='user_details'>" + "ACTION" + "</div></div>"
+        document.getElementById("super_list_header").innerHTML = containerData1;
+       
+        var containerData = '';
         for (let i = 0; i < renderData.length; i++) {
             if (i % 2 == 0) {
                 containerData += "<div class='supervisee_details supervisee_even'><div class='user_details'>" + "image" +
@@ -46,7 +49,8 @@
                     "</div><div class='user_details'>" + renderData[i].name +
                     "</div><div class='user_details'>" + renderData[i].role +
                     "</div><div class='user_details'><a href='javascript:void(0)' class='icon_edit' ><i class='fa fa-pencil' aria-hidden='true'></i></a> &nbsp <a href='javascript:void(0)' class='icon_delete' data-emp='"+renderData[i].id+"'><i class='fa fa-trash' aria-hidden='true'></i></a></div> </div>";
-            } else {
+            } 
+            else {
                 containerData += "<div class='supervisee_details supervisee_odd'><div class='user_details'>" + "image" +
                     "</div><div class='user_details'>" + renderData[i].id +
                     "</div><div class='user_details'>" + renderData[i].name +
@@ -73,18 +77,24 @@
         if (newArray.length > 0) {
             render_division(newArray);
             newArray = null;
-        } else {
+        } 
+        else {
             document.getElementById("super_list").innerHTML = '<h4>No results found</h4>'
         }
            
-            });    
+    });    
     search_bar.addEventListener("search", function() {
         render_division(response);
     });
 
     function sorting(responseData, property) {
         responseData.sort(function(curr, next) {
-            return curr[property] > next[property];
+            if(curr[property] < next[property])
+            return -1;
+        else if(curr[property] > next[property])
+            return 1;
+        else
+            return 0;
         });
         if (responseData.length > 0) {
             render_division(responseData);
@@ -96,7 +106,7 @@
         var empname = document.getElementById('empname');
         var role = document.getElementById('role');
         empid.addEventListener("click", function() {
-            sorting(response, 'empid');
+            sorting(response, 'id');
         });
         empname.addEventListener("click", function() {
             sorting(response, 'name');

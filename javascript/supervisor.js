@@ -1,7 +1,7 @@
 (function() {
     /* Initialize XHR Object */
     var xhr;
-    sessionStorage.userid="1234";
+    //sessionStorage.userid="1234";
     function initRequest() {
         if (window.XMLHttpRequest) {
             xhr = new XMLHttpRequest();
@@ -33,7 +33,7 @@
     {
         var super_details='';
         for (let i = 0; i < renderData.length; i++) {
-            if(renderData[i].id===sessionStorage.userid)
+            if(renderData[i].id===sessionStorage.userID)
             {
                
                 

@@ -82,12 +82,30 @@ xmlhttp.onreadystatechange = function() {
           
           if(found==1 && passmatch!=1)
           {
-            window.alert("Invalid Credentials");
+                      var modal = document.getElementById('modal');
+                      (function()
+                        {
+                          modal.setAttribute('style','display:flex');
+                        }
+                        )();
+                      let error_text = "Invalid Credentials";
+                      document.getElementById("login_fail_text").innerHTML=error_text;
+            //window.alert("Invalid Credentials");
           }
           else{
               if(found!=1)
+                 {
+                      var modal = document.getElementById('modal');
+                      (function()
+                        {
+                          modal.setAttribute('style','display:flex');
+                        }
+                        )();
+                      let error_text = "Username not found";
+                      document.getElementById("login_fail_text").innerHTML=error_text;
+                  }
 
-                window.alert("username not found");
+                
             }
           
         };

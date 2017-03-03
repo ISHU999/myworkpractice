@@ -103,6 +103,36 @@
 			</div>
 		</div>
 		<!--SUPERVISEE MODAL ENDS-->
+                <!--Supervisor Edit Profile Modal-->
+		<div class="modal" id="container_modal_supervisee">
+		<div class="inside_modal">
+		<form action="delete_modal_home_submit" method="get">
+		<table>
+			<tr>
+				<td><label class="modal_text" for="name">Name</label></td>
+				<td><input class="input_text" type="text" name="name" value="Dummy_name" placeholder="Enter name" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td><label class="modal_text" for="id">ID</label></td>
+				<td><input class="input_text" type="text" name="id" value="Dummy_id" placeholder="" 
+				readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td><label class="modal_text" for="Role">Role</label></td>
+				<td><input class="input_text" type="text" name="Role" value="Dummy_role" placeholder="" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td><label class="modal_text" for="Address">Address</label></td>
+				<td><input class="input_text" type="text" name="Address" value="Dummy_address" placeholder=""></td>
+			</tr>
+			<tr ><td id="submit_btn"><input type="submit" name="" value="Save" placeholder="" id="submit_image"></td></tr>
+			
+		</table>	
+		</form>
+		</div>
+	</div>
+
+	<!--supervisor edit profile modal ends-->
 	    <script type="text/javascript" src="javascript/modal.js"></script>
 	    <script type="text/javascript" src="javascript/home.js"></script>
 	    <script type="text/javascript" src="javascript/global.js"></script>

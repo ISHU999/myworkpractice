@@ -12,9 +12,7 @@
         var sublist_items = sublist.nextElementSibling;
       //  console.log(sublist_items.childNodes);
       for(var x =0; x<sublist_items.childNodes.length ; x++){
-            var it = sublist_items.childNodes[x].childNodes;
-           // console.log(it);
-            console.log(it[0].childNodes[0]);
+            var it = sublist_items.childNodes[x].childNodes;    
             it[0].childNodes[0].addEventListener('change', function(event) {
                 if (this.checked) {
                     console.log('hi')
@@ -119,7 +117,6 @@
 
                 var subname = subskill[k].name;
                 var sublevel = subskill[k].level;
-                console.log('i='+k)
                 var idchk = j+'0'+k;
                 container +=
                     '<div class="sub-list-element">' +

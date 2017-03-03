@@ -47,6 +47,22 @@
 	"role":"Associate",
 	"address":"Near suraksha vilaa",
 	"supervisorid":"1234"
+},
+
+{
+	"empid":"4569",
+	"name":"Max",
+	"role":"Associate",
+	"address":"Near suraksha vilaa",
+	"supervisorid":"1234"
+},
+
+{
+	"empid":"4570",
+	"name":"Sachin",
+	"role":"Associate",
+	"address":"Marathalli",
+	"supervisorid":"1234"
 }
 
 

@@ -69,7 +69,7 @@ section {
     /* border: 1px solid green; */
     /*border-radius: 10px;*/
     color: white;
-    display: inline-flex;
+    display: flex;
     height: 12%;
     width: 100%;
     justify-content: space-between;
@@ -78,6 +78,9 @@ section {
     height: 100%;
     text-align: center;
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #heading_container{
     padding-left: 2%;
@@ -94,10 +97,27 @@ section {
 .supervisee_title{
     background-color: #2C2C2C;
     height: 9%;
+    color: rgba(255, 255, 255, 0.4);
 }
 .scroll{
     height: 90%;
 }
 .icon_edit, .icon_delete{
     color: white;
+    border: 1px solid grey;
+    border-radius: 100%;
+    padding: 3px;
+    width: 19px;
+}
+.icon_edit:hover{
+    border: 1px solid white;
+}
+.icon_delete:hover{
+    border: 1px solid white;
+}
+.icon_edit .fa-pencil{
+    font-size: 12px;
+}
+.icon_delete .fa-trash{
+    font-size: 13px;
 }

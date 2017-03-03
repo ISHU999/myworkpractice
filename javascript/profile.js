@@ -120,6 +120,7 @@
                 var subname = subskill[k].name;
                 var sublevel = subskill[k].level;
                 var idchk = j+'0'+k;
+
                 container +=
                     '<div class="sub-list-element">' +
                     
@@ -135,7 +136,6 @@
                     '</div>'
             }
             container += '</div>';
-            //console.log(container)
             mainlist.innerHTML = container;
             skill_list.appendChild(mainlist);
         

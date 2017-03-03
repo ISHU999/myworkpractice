@@ -5,14 +5,14 @@
 }
 
 header {
-    height: 0px !important;
+    height: 0px !important; /*removing the header*/
 }
 
 h1 {
     font-size: 4em;
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
-    line-height: 5px;
+    line-height: 5px; /*Setting the space between lines*/
 }
 
 #logo {
@@ -73,4 +73,4 @@ section {
 #username:focus,
 #send_password:focus {
     outline: none;
-}
+} /*Removing the default blue outline of the fields*/

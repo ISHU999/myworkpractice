@@ -8,6 +8,7 @@
             "level": "1"
         };
         var subskills = [];
+
          function rating(sublist) {
         var sublist_items = sublist.nextElementSibling;
       console.log(sublist_items.childNodes[0]);
@@ -140,6 +141,8 @@
             //console.log(container)
             mainlist.innerHTML = container;
             skill_list.appendChild(mainlist);
+        
+
         }
     }
 
@@ -185,12 +188,12 @@
           
             for (var i = 0; i < show.length; i++){
                 show[i].addEventListener('click', show_sublist);
-                // rating(show[i]);
+                rating(show[i]);
 
 
                  
             }
-             rating(show[0]);
+            
             
         }
 

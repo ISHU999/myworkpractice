@@ -3,7 +3,9 @@ section, .skills{
   justify-content: space-between;
   
 }
-
+.disable{
+	pointer-events: none;
+}
 section{
 	height: 500px;	
 	margin: auto;

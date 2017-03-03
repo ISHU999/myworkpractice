@@ -227,3 +227,13 @@ section{
   
 }
 }
+
+@font-face{
+	font-family: 'Sapient Centro Slab';
+	src: url(../fonts/SapientCentroSlab-Reg.otf);
+}
+
+@font-face{
+	font-family: 'Sapient Centro Slab Thin';
+	src: url(../fonts/SapientCentroSlab-Thin.otf);
+}

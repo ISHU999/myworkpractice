@@ -13,7 +13,9 @@
         var sublist_items = sublist.nextElementSibling;
       console.log(sublist_items.childNodes[0]);
       for(var x =0; x<sublist_items.childNodes.length ; x++){
-            var it = sublist_items.childNodes[x].childNodes;    
+            var it = sublist_items.childNodes[x].childNodes;
+           // console.log(it);
+            console.log(it[0].childNodes[0]);
             it[0].childNodes[0].addEventListener('change', function(event) {
                 if (this.checked) {
                     console.log('hi')
@@ -91,8 +93,8 @@
             var secondarylist = document.getElementById('secondary-list');
 
 
-            populate_skills(pskill,0, primarylist);
-            populate_skills(sskill,1, secondarylist);
+            populate_skills(pskill, primarylist);
+            populate_skills(sskill, secondarylist);
 
 
 
@@ -103,7 +105,7 @@
     }
 
 
-    function populate_skills(skill,index, skill_list) {
+    function populate_skills(skill, skill_list) {
        for (var j = 0; j < skill.length; j++) {
             var mainlist = document.createElement('li');
             var pskillname = skill[j].name;
@@ -119,8 +121,8 @@
 
                 var subname = subskill[k].name;
                 var sublevel = subskill[k].level;
-                var idchk = index+''+j+''+k;
-
+                console.log('i='+k)
+                var idchk = j+'0'+k;
                 container +=
                     '<div class="sub-list-element">' +
                     
@@ -136,6 +138,7 @@
                     '</div>'
             }
             container += '</div>';
+            //console.log(container)
             mainlist.innerHTML = container;
             skill_list.appendChild(mainlist);
         
@@ -144,7 +147,12 @@
     }
 
 
-    // ajax call
+
+    
+
+
+
+    // ajaz call
 
     var xhr;
 
@@ -192,7 +200,8 @@
         }
     
 
-    window.onload=load;
+    var l = document.getElementById('load');
+    l.addEventListener('click', load);
 
 
 

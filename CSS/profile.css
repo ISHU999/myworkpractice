@@ -184,7 +184,7 @@ height:40px;
 }
 
 
-input[type=checkbox]   /*custom checkbox*/
+input[type=radio]   /*custom checkbox*/
 {
 	visibility: hidden;
 }
@@ -206,7 +206,7 @@ div label       /*custom checkbox*/
 	top: 20%;
 	width: 60%;
 }
-.checkbox input[type=checkbox]:checked+ label  /*custom checkbox*/
+.checkbox input[type=radio]:checked+ label  /*custom checkbox*/
 {
 	background-color: #FFF;
 }

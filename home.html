@@ -26,7 +26,7 @@
 			<div class="header-dropdown">
 				<img src="images/stephanie.png" alt="Profile picture" class="profile_pic Round_corner "/>
 				<div class="header-dropdown-content">
-	               <a href="#">Edit Profile</a>
+	               <a href="#" id="edit_profile_link" >Edit Profile</a>
 	               <a href="#">Log out</a>
 	            </div>
             </div>
@@ -76,12 +76,11 @@
 
 
         <!-- DELETE MODAL HTML ENDS!-->
-        <!-- SUPERVISEE EDIT MODAL BEGINS--><!-- THIS IS NEW MODAL HTML!-->
+        <!-- SUPERVISEE EDIT MODAL BEGINS-->
 		<div class="modal" id="container_modal_add">
 			<div class="inside_modal">
 	
-	<div class="modal" id="container_modal_add">
-		<div class="inside_modal">
+	
 
 				<form class="modal_form" action="delete_modal_home_submit" method="get">
 					<table>
@@ -103,6 +102,36 @@
 			</div>
 		</div>
 		<!--SUPERVISEE MODAL ENDS-->
+                <!--Supervisor Edit Profile Modal-->
+		<div class="modal" id="container_modal_supervisor">
+		<div class="inside_modal">
+		<form action="delete_modal_home_submit" method="get">
+		<table>
+			<tr>
+				<td><label class="modal_text" for="name">Name</label></td>
+				<td><input class="input_text" type="text" name="name" value="Dummy_name" placeholder="Enter name" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td><label class="modal_text" for="id">ID</label></td>
+				<td><input class="input_text" type="text" name="id" value="Dummy_id" placeholder="" 
+				readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td><label class="modal_text" for="Role">Role</label></td>
+				<td><input class="input_text" type="text" name="Role" value="Dummy_role" placeholder="" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td><label class="modal_text" for="Address">Address</label></td>
+				<td><input class="input_text" type="text" name="Address" value="Dummy_address" placeholder=""></td>
+			</tr>
+			<tr ><td id="submit_btn"><input type="submit" name="" value="Save" placeholder="" id="submit_image"></td></tr>
+			
+		</table>	
+		</form>
+		</div>
+	</div>
+
+	<!--supervisor edit profile modal ends-->
 	    <script type="text/javascript" src="javascript/modal.js"></script>
 	    <script type="text/javascript" src="javascript/home.js"></script>
 	    <script type="text/javascript" src="javascript/global.js"></script>
